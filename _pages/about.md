@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "academicpages is a ready-to-fork GitHub Pages template for academic personal websites"
+title: ""
 excerpt: "About me"
 author_profile: true
 redirect_from: 
@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-Welcome to my portfolio, where I invite you to explore my journey as a passionate and dedicated data science graduate student. My name is [Your Name], and I am thrilled to share my expertise and experiences in the dynamic world of data science.
+Welcome to my portfolio, where I invite you to explore my journey as a passionate and dedicated data science graduate student. My name is Kewal Tadas, and I am thrilled to share my expertise and experiences in the dynamic world of data science.
 
 In today's rapidly evolving digital landscape, the ability to extract meaningful insights from vast amounts of data is a coveted skill. As a data scientist, I am driven by the limitless possibilities of leveraging data to make informed decisions, solve complex problems, and drive innovation across various domains.
 
