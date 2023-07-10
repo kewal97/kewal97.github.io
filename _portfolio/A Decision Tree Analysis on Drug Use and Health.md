@@ -115,8 +115,9 @@ random forest giving the least MSE of 1.616788.
 
 **DISCUSSION**
 1. BINARY CLASSIFICATION
+<img width="500" alt="Screenshot 2023-07-10 at 2 03 14 PM" src="https://github.com/kewal97/kewal97.github.io/assets/116126736/702cf5b6-a793-4032-a5c8-619bbbc55c6b">
 
-<img width="591" alt="res" src="https://github.com/kewal97/kewal97.github.io/blob/master/images/Screenshot%202023-07-10%20at%202.03.14%20PM.png">
+
 
 
 
