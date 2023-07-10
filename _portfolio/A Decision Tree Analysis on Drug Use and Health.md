@@ -1,5 +1,5 @@
 ---
-title: "A Decision Tree Analysis of the National Survey on Drug Use and Health"
+title: "A Decision Tree Analysis on Drug Use and Health"
 excerpt: "This report contains the analysis of factors that are associated with youth drug use, using decision tree 
 models on survey data from the National Survey on Drug Use and Health. The dataset contains detailed information 
 on various aspects of respondents' lives, including demographics, youth experiences, and substantial drug use. 
