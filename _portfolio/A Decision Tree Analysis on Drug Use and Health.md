@@ -117,6 +117,26 @@ random forest giving the least MSE of 1.616788.
 1. BINARY CLASSIFICATION
 <img width="500" alt="Screenshot 2023-07-10 at 2 03 14 PM" src="https://github.com/kewal97/kewal97.github.io/assets/116126736/702cf5b6-a793-4032-a5c8-619bbbc55c6b">
 
+<img width="520" alt="Screenshot 2023-07-10 at 3 34 06 PM" src="https://github.com/kewal97/kewal97.github.io/assets/116126736/35ec3c4a-f30b-45a8-80c5-9b069a3169b2">
+
+The first question being asked at the root node is whether the respondent approves or disapproves of marijuana use. If they strongly or somewhat disapprove, the algorithm moves down the left branch, and if they neither approve nor disapprove, it moves down the right branch.
+
+At its left node, the algorithm is asking whether any of the students in the respondent's grade take marijuana. If most or all of them do not take marijuana, it moves down to it’s left branch, and if most or all of them do take marijuana, it moves down to its right branch.
+
+At its left node, the algorithm is asking how their close friends feel about youth taking marijuana. If they strongly or somewhat disapprove of taking marijuana, then the youth are more likely to never used marijuana. 
+
+BAGGING:
+
+BAGGING is my best model according to the accuracies.
+<img width="401" alt="Screenshot 2023-07-10 at 3 37 56 PM" src="https://github.com/kewal97/kewal97.github.io/assets/116126736/4362bfbd-215e-46ba-ba0d-dacfcc145c95">
+
+According to the confusion matrix, 782 of youth who never used marijuana are classified correctly and 64 youth who uses marijuana are predicted correctly.
+77 people who uses marijuana are misclassified as never used and 28 people that doesn’t use marijuana are misclassified as used.
+
+According to the plot, the most important variables that can predict if a person ever used marijuana or not are yflmjmo (how yth feels: peers using marijuana monthly), FRDMEVR2(rc-yth think: close frnds feel abt yth try marijuana), stndsmj(number of students in yth grade use marijuana), frdmjmon(rc-yth think: clse frnds feel abt yth use marijuana mon), YFLTMRJ2(rc-how yth feels: peers try marijuana).
+![image](https://github.com/kewal97/kewal97.github.io/assets/116126736/12c54c23-cc4b-410e-bea6-7bb5addac62b)
+
+
 
 
 
