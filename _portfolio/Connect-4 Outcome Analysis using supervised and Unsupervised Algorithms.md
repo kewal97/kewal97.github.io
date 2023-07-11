@@ -4,6 +4,7 @@ excerpt: "This project aims to investigate various supervised and unsupervised a
 ---
 
 **ABSTRACT**
+
 This project aims to investigate various supervised and unsupervised algorithms for analyzing the Connect-4 game dataset. The dataset consists of legal game positions in Connect-4 where neither player has achieved victory yet, and the next move is not predetermined. The project commences with data visualization, including a bar plot representing the distribution of outcomes and a heatmap illustrating the game board positions. To pre-process the data, categorical features are encoded using one-hot encoding. Several supervised algorithms such as Logistic Regression, Decision Trees, Support Vector Machines, and Neural Networks are employed, alongside unsupervised learning techniques like K-means clustering. The performance of the supervised learning algorithms is evaluated based on accuracy, while the unsupervised clustering approach is evaluated using metrics such as the silhouette score and completeness score. This project aims to provide valuable insights into the efficacy of different techniques for analyzing the Connect-4 dataset.
 
 **INTRODUCTION**
