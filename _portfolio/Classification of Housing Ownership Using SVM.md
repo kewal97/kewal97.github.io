@@ -4,7 +4,6 @@ excerpt: "The report describes the application of Support Vector Machines (SVM) 
 ---
 
 **ABSTRACT**
-
 The report describes the application of Support Vector Machines (SVM) for classifying housing ownership as either "Owned" or "Rented" based on several demographic and economic variables. Our analysis uses data collected via the US Census and accessed through IPUMS USA, which is a vast repository of information on people and their housing situations. The dataset is we are using is pre-processed to group the data by individual households, and irrelevant variables are removed. and use SVM with three different kernels (linear, radial, and polynomial) to model the relationship between these variables and occupancy status. The accuracy of the models is evaluated and compared with different regularization parameter (C) values. The classification results are visualized using decision boundary plots. Our findings demonstrate the predictive power of SVM in this context, with all three SVM models achieving high accuracy in predicting occupancy status.
 
 **INTRODUCTION**
