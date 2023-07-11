@@ -1,5 +1,5 @@
 ---
-title: "Stroke Prediction"
+title: "Classification of Housing Ownership Using SVM"
 excerpt: "A stroke is a cerebrovascular disorder that causes damage to the normal supply of blood to the brain, according to the World Health Organization (WHO). Strokes account for approximately 11% of all deaths worldwide. The condition may lead to death or long-term disability if not treated properly. The cause of strokes can be hemorrhagic or ischemic. Both hemorrhagic and ischemic strokes can occur together. Ischemic strokes are those caused by clots in the blood vessels, while hemorrhagic strokes are those caused by ruptured blood vessels. . In general, 85 percent of strokes are classified as ischemic."
 ---
 
