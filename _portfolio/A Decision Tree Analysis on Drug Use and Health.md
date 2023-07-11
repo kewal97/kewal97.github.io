@@ -115,7 +115,8 @@ random forest giving the least MSE of 1.616788.
 
 **DISCUSSION**
 1. BINARY CLASSIFICATION
-<img width="500" alt="Screenshot 2023-07-10 at 2 03 14 PM" src="https://github.com/kewal97/kewal97.github.io/assets/116126736/702cf5b6-a793-4032-a5c8-619bbbc55c6b">
+<img width="439" alt="Picture1" src="https://github.com/kewal97/kewal97.github.io/assets/116126736/881f8712-4ea9-4ed4-af4e-28556ddb8bcf">
+
 
 <img width="520" alt="Screenshot 2023-07-10 at 3 34 06 PM" src="https://github.com/kewal97/kewal97.github.io/assets/116126736/35ec3c4a-f30b-45a8-80c5-9b069a3169b2">
 
@@ -138,11 +139,76 @@ According to the plot, the most important variables that can predict if a person
 2. MULTI – CLASS CLASSIFICATION:
 
 Example decision tree:
-![image](https://github.com/kewal97/kewal97.github.io/assets/116126736/d12bf653-64f5-490e-9ade-6c5d4e9b70e4)
+
+<img width="442" alt="Picture1" src="https://github.com/kewal97/kewal97.github.io/assets/116126736/ef632f07-5b4a-43aa-b92b-876e613e1502">
+
 According to the accuracy of the models, the best model to predict number of days marijuana was used in past year are Decision tree & pruning.
 
-![image](https://github.com/kewal97/kewal97.github.io/assets/116126736/03461b76-5e52-4ceb-98df-7931b8912aa8)
+1.DECISION TREE:
+
+<img width="267" alt="Picture1" src="https://github.com/kewal97/kewal97.github.io/assets/116126736/9e4c39d0-0e18-400f-93b0-3eddab739622">
+
 The confusion matrix shows the number of predicted values that match or do not match the actual values in the test dataset for a multi-class classification problem. The rows of the matrix represent the predicted values, and the columns represent the actual values. In this ![image]
+
+case, the matrix is a 6x6 table, where the predicted values range from 1 to 6 classes and correspond to the frequency of marijuana use in the past year.
+The diagonal elements of the matrix represent the number of correct predictions, while the off-diagonal elements represent the number of incorrect predictions.
+
+ Looking at the matrix, we can see that the model correctly predicted the non-user category (level 6) for 823 cases. However, it performed poorly in predicting the other levels, particularly level 4 where it correctly predicted only 13 out of 24 cases. The model did not predict any cases in levels 1, 2, 3 or 5.
+
+The overall accuracy of the model is 0.879, which means that it correctly classified 87.9% of the cases in the test data. However, the low performance in predicting the levels of marijuana use other than non-users suggests that the model may not be reliable for predicting levels of marijuana use.
+
+2.	PRUNING:
+<img width="270" alt="Picture1" src="https://github.com/kewal97/kewal97.github.io/assets/116126736/de678c10-dc8d-40f8-9abb-6457915dbb81">
+
+The confusion matrix is same for pruning and decision tree. These both are best models in terms of accuracy. But let’s consider bagging to see it’s confusion matrix.
+
+<img width="276" alt="Picture1" src="https://github.com/kewal97/kewal97.github.io/assets/116126736/db4accbd-0422-4ceb-84b1-80bc8724ea59">
+
+824 cases of level 6 are classified correctly and some cases in classes 1,2,3 are classified correctly. So, I think I prefer bagging.
+
+<img width="327" alt="Picture1" src="https://github.com/kewal97/kewal97.github.io/assets/116126736/8ea02955-1da1-4405-ae83-eaafc712cf3e">
+
+According to the above plot, the most important variables that can be helpful in classifying the number of days of marijuana use in past year are PRMJEVR2(rc-yth think: parents feel abt yth try marijuana), FRDMEVR2(rc-yth think: close frnds feel abt yth try marijuana), YOSELL2(RC-youth sold illegal drugs), frdmjmon(rc-yth think: clse frnds feel abt yth use marijuana mon), YFLTMRJ2(rc-how yth feels: peers try marijuana).
+
+3.REGRESSION:
+Example decision tree:
+ 
+<img width="367" alt="Picture1" src="https://github.com/kewal97/kewal97.github.io/assets/116126736/4e98d812-1456-499d-8ab0-00bc151f2151">
+
+According to the MSE of the models, the best model to predict age that marijuana was used for the first time is random forest.
+
+1.RANDOM FOREST:
+
+<img width="242" alt="Picture1" src="https://github.com/kewal97/kewal97.github.io/assets/116126736/1c1bac68-ce00-42fb-9643-a09742850f48">
+
+According to the above plot, the top variables that are used to predict the age of first use of marijuana is EDUSCHGRD2(what grade in now/will be in), YTHACT2(rc-yth participated in youth activities), PRGDJOB2(rc-parents tell yth had done good job in pst yr), PRPROUD2(rc-parents tell yth proud of things done in pst yr) and GRPCNSL2(rc-participated in program to help substance use).
+
+**CONCLUSION**
+
+This study has examined the factors associated with youth drug use using decision tree models and ensemble methods applied to data from the National Survey on Drug Use and Health. The findings of this study have practical implications for public health interventions aimed at reducing youth drug use.
+
+The results showed that certain demographic and youth experience variables are significant predictors of youth drug use, especially for marijuana use. The decision tree models produced accurate predictions for binary classification of marijuana use, multi-class classification for frequency of marijuana use in the past year, and regression for first-ever use of marijuana. The ensemble methods, including bagging and random forests, improved the accuracy of the models, which indicates the importance of using multiple techniques to create models for predicting substance use among young people.
+
+or binary classification, the bagging model had the highest accuracy of 0.889, indicating that it is the best model to predict if a person has ever used marijuana or not. The decision tree and pruning models had the highest accuracy of 0.879 for multi-class classification, making them the best models to predict the number of days of marijuana use in the past year. But for better classification without misclassifications towards majority class, we can consider bagging. For regression, the random forest model had the lowest MSE of 1.617, indicating that it is the best model to predict the age at which a person first used marijuana.
+
+Based on the confusion matrices and feature importance plots, we have identified the variables that are most important in predicting the use of marijuana. For binary classification, the most important variables were how youth feels about their peers using marijuana monthly, how close friends feel about youth trying marijuana, and how students in youth grade use marijuana. For multi-class classification, the most important variables were how youth thinks parents feel about youth trying marijuana, how close friends feel about youth trying marijuana, and whether youth has ever tried smoking cigarettes. For regression, the most important variables were how youth perceives risk in using marijuana, how many days a week youth exercises, and how many days in the past week youth felt depressed.
+
+Overall, our models provide insights into the factors that influence the use of marijuana among youth and can help policymakers and healthcare professionals to identify and address the underlying risk factors.
+
+**BIBLIOGRAPHY**
+
+1. Substance Abuse and Mental Health Services Administration. National Survey on Drug Use and Health. Retrieved from https://www.samhsa.gov/data/data-we-collect/nsduh-national-survey-drug-use-and-health
+
+2. Substance Abuse and Mental Health Services Administration. NSDUH Codebook: Survey Questions, Responses, and Coding. Retrieved from https://www.samhsa.gov/data/report/nsduh-codebook-detailed-instructions-using-2018-nsduh-public-use-file
+
+
+
+
+
+
+
+
+
 
 
 
