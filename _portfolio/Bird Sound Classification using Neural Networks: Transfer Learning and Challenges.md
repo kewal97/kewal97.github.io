@@ -9,9 +9,12 @@ the neural network exhibited an acceptable level of performance. Nevertheless, w
 obstacles that need to be overcome in further research."
 ---
 
+**Link to GitHub Repository** 
+https://github.com/kewal97/Bird_Sound_Classification_using_Neural_Networks
+
 **Abstract**
 
-In this code, we perform bird sound classification using a neural network to predict bird species based on their sounds. We used data from the Birdcall competition, selecting 12 bird species. We are trying to build both a binary classification model for two of the species and a multi-class classification model for all 12 species. A crucial aspect of our project involved exploring transfer learning. To execute this, we implemented a pre-established neural network model that underwent modifications tailored for our particular data. Our investigation revealed that the neural network exhibited an acceptable level of performance. Nevertheless, we encountered some limitations & obstacles that need to be overcome in further research.
+In this machine learning project, we perform bird sound classification using a neural network to predict bird species based on their sounds. We used data from the Birdcall competition, selecting 12 bird species. We are trying to build both a binary classification model for two of the species and a multi-class classification model for all 12 species. A crucial aspect of our project involved exploring transfer learning. To execute this, we implemented a pre-established neural network model that underwent modifications tailored for our particular data. Our investigation revealed that the neural network exhibited an acceptable level of performance. Nevertheless, we encountered some limitations & obstacles that need to be overcome in further research.
 
 **Introduction**
 
