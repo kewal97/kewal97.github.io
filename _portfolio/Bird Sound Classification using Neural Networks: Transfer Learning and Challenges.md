@@ -9,8 +9,8 @@ the neural network exhibited an acceptable level of performance. Nevertheless, w
 obstacles that need to be overcome in further research."
 ---
 
-**Link to GitHub Repository** 
-https://github.com/kewal97/Bird_Sound_Classification_using_Neural_Networks
+
+Link to GitHub Repository  [GitHub Code](https://github.com/kewal97/Bird_Sound_Classification_using_Neural_Networks).
 
 **Abstract**
 
