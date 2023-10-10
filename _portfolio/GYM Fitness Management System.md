@@ -1,22 +1,23 @@
 ---
 title: "GYM Fitness Management System."
 excerpt: "Boutique gyms and health club startups often face the challenge of managing their operations effectively while keeping costs low. Our application 
-offers a graphical user interface (GUI) designed specifically for these businesses, prioritizing simplicity and affordability."
+offers a graphical user interface (GUI) designed specifically for these businesses, prioritizing simplicity and affordability.
+"
 
-Link to GitHub Repository  [GitHub Code](https://github.com/kewal97/GYM_Fitness_Management_System).
+Link to GitHub Repository[GitHub Code](https://github.com/kewal97/GYM_Fitness_Management_System).
 
 **Introduction**
 
 Boutique gyms and health club startups often face the challenge of managing their operations effectively while keeping costs low. Our application 
 offers a graphical user interface (GUI) designed specifically for these businesses, prioritizing simplicity and affordability.
 
-# Data Base
+**Data Base**
 One can create the database and import the data by running the dump.sql file in your SQL Workbench.
 
-# Queries
+**Queries**
 Some of the relevant queries are in the file relevant_queries.sql and one can run this file in SQL Workbench.
 
-# GUI Application
+**GUI Application**
 One can run the application by running the file GUI_Application.ipynb in the jupyter notebook.
 ## Query specific instructions on how to run our python program
 
