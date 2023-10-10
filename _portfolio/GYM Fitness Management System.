@@ -19,6 +19,7 @@ Some of the relevant queries are in the file relevant_queries.sql and one can ru
 # GUI Application
 One can run the application by running the file GUI_Application.ipynb in the jupyter notebook.
 ## Query specific instructions on how to run our python program
+
 #### 1. How many trainers are associated with each type of diet plan? And how many members are following each type of diet plan? And (keto, diabetic etc.)?
 This query retrieves the number of trainers and members associated with each diet plan, such as keto and diabetic. Because it is a summary query, it was designed to
 not take any specific prompts from the user. By default, it shows all the trainers and the respective diet plan made by each trainer.
