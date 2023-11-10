@@ -1,0 +1,3753 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_a05770e606bb7634f18251693317616a {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+             <h3 align="center" style="font-size:20px"><b>Chicago Metropolitan Museums, Zoos, and Aquariums</b></h3>
+             
+    
+            <div class="folium-map" id="map_a05770e606bb7634f18251693317616a" ></div>
+        
+    
+<div style="position: fixed; 
+            top: 50px; right: 50px; width: 200px; height: 110px; 
+            border:2px solid grey; z-index:9999; font-size:14px; background:white;
+            padding:10px; border-radius:5px;">
+    &nbsp;<i class="fa fa-paw" style="color:green"></i> Zoo <br>
+    &nbsp;<i class="fa fa-fish" style="color:blue"></i> Aquarium <br>
+    &nbsp;<i class="fa fa-university" style="color:red"></i> Museum <br>
+</div>
+</body>
+<script>
+    
+    
+            var map_a05770e606bb7634f18251693317616a = L.map(
+                "map_a05770e606bb7634f18251693317616a",
+                {
+                    center: [41.8781, -87.6298],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10.5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_a05770e606bb7634f18251693317616a);
+
+            
+
+        
+    
+            var tile_layer_57fe4e75466ef7b22ff180efc47eb18a = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_a05770e606bb7634f18251693317616a);
+        
+    
+            var marker_cluster_f90293a0a3e75dc33f50c0d8034314cb = L.markerClusterGroup(
+                {}
+            );
+            map_a05770e606bb7634f18251693317616a.addLayer(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var marker_b380404c5dfcf0b5c3f8cb7fef4e59f7 = L.marker(
+                [41.87928, -87.63072],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_ba95a1a446d5ad6fe3a5392d512f6c04 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_b380404c5dfcf0b5c3f8cb7fef4e59f7.setIcon(icon_ba95a1a446d5ad6fe3a5392d512f6c04);
+        
+    
+            marker_b380404c5dfcf0b5c3f8cb7fef4e59f7.bindTooltip(
+                `<div>
+                     A FRENCH AMERICAN MUSEUM OF CHICAGO
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_22d1d20efa9753021430c6406e480856 = L.marker(
+                [41.70412, -87.60279],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_d0de6d9f6999c72552b2e12b9b667722 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_22d1d20efa9753021430c6406e480856.setIcon(icon_d0de6d9f6999c72552b2e12b9b667722);
+        
+    
+            marker_22d1d20efa9753021430c6406e480856.bindTooltip(
+                `<div>
+                     A. PHILIP RANDOLPH PULLMAN PORTER MUSEUM
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b477163f7e883f7177b025224028a94a = L.marker(
+                [41.86488, -87.6194],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_a3924182386222e3fbbbd112cef17aea = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_b477163f7e883f7177b025224028a94a.setIcon(icon_a3924182386222e3fbbbd112cef17aea);
+        
+    
+            marker_b477163f7e883f7177b025224028a94a.bindTooltip(
+                `<div>
+                     ADLER PLANETARIUM & ASTRONOMY MUSEUM
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_331438743321f148973d512543d44a99 = L.marker(
+                [41.74632, -87.60552],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_8c5b62106ef0aa06a17f315b9e67f2b0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_331438743321f148973d512543d44a99.setIcon(icon_8c5b62106ef0aa06a17f315b9e67f2b0);
+        
+    
+            marker_331438743321f148973d512543d44a99.bindTooltip(
+                `<div>
+                     AFRICAN HOLOCAUST MEMORIAL COMMISSION
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c1d322951d8249401a6146bafdf93c3d = L.marker(
+                [41.88819, -87.625],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_ed9f6fcf721a25c033b86d3b7020f169 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_c1d322951d8249401a6146bafdf93c3d.setIcon(icon_ed9f6fcf721a25c033b86d3b7020f169);
+        
+    
+            marker_c1d322951d8249401a6146bafdf93c3d.bindTooltip(
+                `<div>
+                     AFRICAN ROCK ARTS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0068a163be302656bf703e5a0235f5f4 = L.marker(
+                [41.89411, -87.62415],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_9b7848a6312327a86d3e25e7fbddd13f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_0068a163be302656bf703e5a0235f5f4.setIcon(icon_9b7848a6312327a86d3e25e7fbddd13f);
+        
+    
+            marker_0068a163be302656bf703e5a0235f5f4.bindTooltip(
+                `<div>
+                     AMERICAN BAR ASSOCIATION MUSEUM OF LAW
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ff5b15dda72e0913972f7e377a4a63b2 = L.marker(
+                [41.8287, -87.85299],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_7adb44d87c677e66faacf51b365100ba = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_ff5b15dda72e0913972f7e377a4a63b2.setIcon(icon_7adb44d87c677e66faacf51b365100ba);
+        
+    
+            marker_ff5b15dda72e0913972f7e377a4a63b2.bindTooltip(
+                `<div>
+                     AMERICAN POLICE CENTER MUSEUM
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_56620c3cd20d1226460b2f3ba635bf41 = L.marker(
+                [41.86714, -87.65323],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_407137260632ea1686b3419878a4af92 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_56620c3cd20d1226460b2f3ba635bf41.setIcon(icon_407137260632ea1686b3419878a4af92);
+        
+    
+            marker_56620c3cd20d1226460b2f3ba635bf41.bindTooltip(
+                `<div>
+                     ARNOLD DAMEN HISTORICAL & PRESERVATION SOCIETY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_df075f5091e9f290b83b2d7919779045 = L.marker(
+                [41.88069, -87.62415],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_f73cdc33343895b56a96af8ac16f62fd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_df075f5091e9f290b83b2d7919779045.setIcon(icon_f73cdc33343895b56a96af8ac16f62fd);
+        
+    
+            marker_df075f5091e9f290b83b2d7919779045.bindTooltip(
+                `<div>
+                     ART INSTITUTE OF CHICAGO
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8f3d2cd9e1fd6cc7f0a0d1c7f7207ed3 = L.marker(
+                [41.87809, -87.62765],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_58f51d75a72ab512471385536c732029 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_8f3d2cd9e1fd6cc7f0a0d1c7f7207ed3.setIcon(icon_58f51d75a72ab512471385536c732029);
+        
+    
+            marker_8f3d2cd9e1fd6cc7f0a0d1c7f7207ed3.bindTooltip(
+                `<div>
+                     ART MUSEUM
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4b768390700993f4c1de7df9c1bbb327 = L.marker(
+                [41.79512, -87.59962],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_84543e9340ae8bdbac5545d56f4e4275 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_4b768390700993f4c1de7df9c1bbb327.setIcon(icon_84543e9340ae8bdbac5545d56f4e4275);
+        
+    
+            marker_4b768390700993f4c1de7df9c1bbb327.bindTooltip(
+                `<div>
+                     AUGUSTANA HERITAGE ASSOCIATION
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4f81cfeb4040ab6f902f552dd050063e = L.marker(
+                [41.77444, -87.72274],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_ac6f3773448e7928d0bfd5abb84ccb50 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_4f81cfeb4040ab6f902f552dd050063e.setIcon(icon_ac6f3773448e7928d0bfd5abb84ccb50);
+        
+    
+            marker_4f81cfeb4040ab6f902f552dd050063e.bindTooltip(
+                `<div>
+                     BALZEKAS MUSEUM OF LITHUANIAN CULTURE
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2cc16b7f46f513cccd192cd90ebb03dd = L.marker(
+                [41.88069, -87.62415],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_593beeb238089278a8b2bd169bae3c6c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_2cc16b7f46f513cccd192cd90ebb03dd.setIcon(icon_593beeb238089278a8b2bd169bae3c6c);
+        
+    
+            marker_2cc16b7f46f513cccd192cd90ebb03dd.bindTooltip(
+                `<div>
+                     BETTY RYMER GALLERY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bf1f3f0abe5c7e73093be8e4f53dc286 = L.marker(
+                [41.89095, -87.61776],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_f62e5e839e9122de6d086f3f05803598 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_bf1f3f0abe5c7e73093be8e4f53dc286.setIcon(icon_f62e5e839e9122de6d086f3f05803598);
+        
+    
+            marker_bf1f3f0abe5c7e73093be8e4f53dc286.bindTooltip(
+                `<div>
+                     BICYCLE MUSEUM OF AMERICA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e23f158006184de159401b4bf3b26958 = L.marker(
+                [41.88072, -87.7109],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_b37206b4dafdbe8d12f4db02bf044939 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_e23f158006184de159401b4bf3b26958.setIcon(icon_b37206b4dafdbe8d12f4db02bf044939);
+        
+    
+            marker_e23f158006184de159401b4bf3b26958.bindTooltip(
+                `<div>
+                     BORDERBEND ARTS COLLECTIVE
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_02ab6452aa3bb150870557fd2cef8e3e = L.marker(
+                [41.83131, -87.61069],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_3b7eb5b90b64c8a2a4857cbd4bc58307 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_02ab6452aa3bb150870557fd2cef8e3e.setIcon(icon_3b7eb5b90b64c8a2a4857cbd4bc58307);
+        
+    
+            marker_02ab6452aa3bb150870557fd2cef8e3e.bindTooltip(
+                `<div>
+                     BRONZEVILLE BLACK CHICAGOAN HISTORICAL SOCIETY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_67ce4370214471d951615442fc86861f = L.marker(
+                [41.72598, -87.58532],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_ac2ca19bf24a6aefa1a5ae38c578e4b6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_67ce4370214471d951615442fc86861f.setIcon(icon_ac2ca19bf24a6aefa1a5ae38c578e4b6);
+        
+    
+            marker_67ce4370214471d951615442fc86861f.bindTooltip(
+                `<div>
+                     BRONZEVILLE CHILDREN'S MUSEUM
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_84dc6391a4df2191dfef75f87d2576f1 = L.marker(
+                [41.95123, -87.655],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_ea55ad40b61bd5597b1918afc659808b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_84dc6391a4df2191dfef75f87d2576f1.setIcon(icon_ea55ad40b61bd5597b1918afc659808b);
+        
+    
+            marker_84dc6391a4df2191dfef75f87d2576f1.bindTooltip(
+                `<div>
+                     BUENA PARK NEIGHBORS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_002694ee51afae6e11578ea31616e08a = L.marker(
+                [41.91728, -87.7091],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_59f5f222d4c5ee138d0cb2be84fbeaa4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_002694ee51afae6e11578ea31616e08a.setIcon(icon_59f5f222d4c5ee138d0cb2be84fbeaa4);
+        
+    
+            marker_002694ee51afae6e11578ea31616e08a.bindTooltip(
+                `<div>
+                     BUSY BEAVER BUTTON MUSEUM
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_088bc1f5ec2f2fb89182b29024888729 = L.marker(
+                [41.96844, -87.6988],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_4c8ce56ad513f2336a104ccb9a6c8c0e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_088bc1f5ec2f2fb89182b29024888729.setIcon(icon_4c8ce56ad513f2336a104ccb9a6c8c0e);
+        
+    
+            marker_088bc1f5ec2f2fb89182b29024888729.bindTooltip(
+                `<div>
+                     CAMBODIAN ASSOCIATION OF ILLINOIS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e50e9a3434074b5207e5d4bdc1e49d24 = L.marker(
+                [41.78598, -87.59409],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_9bd867d1e26ff1dcb9976890c5792732 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_e50e9a3434074b5207e5d4bdc1e49d24.setIcon(icon_9bd867d1e26ff1dcb9976890c5792732);
+        
+    
+            marker_e50e9a3434074b5207e5d4bdc1e49d24.bindTooltip(
+                `<div>
+                     CHAPIN HALL CENTER FOR CHILDREN
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b3603164f80ba569428977b00332c1c0 = L.marker(
+                [41.90711, -87.62748],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_5d6b6098aff7e8b7218d817789dc99c1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_b3603164f80ba569428977b00332c1c0.setIcon(icon_5d6b6098aff7e8b7218d817789dc99c1);
+        
+    
+            marker_b3603164f80ba569428977b00332c1c0.bindTooltip(
+                `<div>
+                     CHARNLEY-PERSKY HOUSE MUSEUM FOUNDATION
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9c51a174778e6e5bfeb86ebbe97dc662 = L.marker(
+                [41.83801, -87.64184],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_b227c9a907a1dd9eb4b6c6f8f36f3dc1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_9c51a174778e6e5bfeb86ebbe97dc662.setIcon(icon_b227c9a907a1dd9eb4b6c6f8f36f3dc1);
+        
+    
+            marker_9c51a174778e6e5bfeb86ebbe97dc662.bindTooltip(
+                `<div>
+                     CHI-AM MUSEUM CHICAGO
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_49957885f951c5d84c443d05cdea605d = L.marker(
+                [41.9312, -87.63733],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_3e7182a5b2f7eb41713a885f582e82fa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_49957885f951c5d84c443d05cdea605d.setIcon(icon_3e7182a5b2f7eb41713a885f582e82fa);
+        
+    
+            marker_49957885f951c5d84c443d05cdea605d.bindTooltip(
+                `<div>
+                     CHICAGO ACADEMY OF SCIENCES
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6553e630dd9ebb798917dc8eaa90245b = L.marker(
+                [41.79764, -87.62407],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_df28f10b657e00c9b007ee3ca0f97c8a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_6553e630dd9ebb798917dc8eaa90245b.setIcon(icon_df28f10b657e00c9b007ee3ca0f97c8a);
+        
+    
+            marker_6553e630dd9ebb798917dc8eaa90245b.bindTooltip(
+                `<div>
+                     CHICAGO AFRICAN AMERICAN FIREFIGHTERS MUSEUM
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6dc16eca59a1b44c19dd5977708f8f20 = L.marker(
+                [41.87923, -87.62437],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_d8d4ab6704c5cc3f7dc8e770b3e2596e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_6dc16eca59a1b44c19dd5977708f8f20.setIcon(icon_d8d4ab6704c5cc3f7dc8e770b3e2596e);
+        
+    
+            marker_6dc16eca59a1b44c19dd5977708f8f20.bindTooltip(
+                `<div>
+                     CHICAGO ARCHITECTURE FOUNDATION
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3fcf3d50a894ef5e41c279689e2f6bf6 = L.marker(
+                [41.87408, -87.66795],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_2b809e948b4b366160df2e4487580a25 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_3fcf3d50a894ef5e41c279689e2f6bf6.setIcon(icon_2b809e948b4b366160df2e4487580a25);
+        
+    
+            marker_3fcf3d50a894ef5e41c279689e2f6bf6.bindTooltip(
+                `<div>
+                     CHICAGO BASEBALL MUSEUM
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1c3563be84bb0ec1acecc482770abfbe = L.marker(
+                [41.88438, -87.62296],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_594f4d823330e6118d06f8f6b9bd3ed1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_1c3563be84bb0ec1acecc482770abfbe.setIcon(icon_594f4d823330e6118d06f8f6b9bd3ed1);
+        
+    
+            marker_1c3563be84bb0ec1acecc482770abfbe.bindTooltip(
+                `<div>
+                     CHICAGO BLUES MUSEUM
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_390c72fb952b91075ba1ae9d152e1417 = L.marker(
+                [41.88438, -87.62296],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_da2dc220fee62573a046dab6ac30368e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_390c72fb952b91075ba1ae9d152e1417.setIcon(icon_da2dc220fee62573a046dab6ac30368e);
+        
+    
+            marker_390c72fb952b91075ba1ae9d152e1417.bindTooltip(
+                `<div>
+                     CHICAGO BLUES MUSEUM GALLERY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ce0eecdf24fcc05156fc2105e06dcc14 = L.marker(
+                [41.89199, -87.61409],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_979dc11034b21105dd6fb66a80f049bd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_ce0eecdf24fcc05156fc2105e06dcc14.setIcon(icon_979dc11034b21105dd6fb66a80f049bd);
+        
+    
+            marker_ce0eecdf24fcc05156fc2105e06dcc14.bindTooltip(
+                `<div>
+                     CHICAGO CHILDREN'S MUSEUM
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fe5ec9b4db08458d67e5df041a901037 = L.marker(
+                [41.88331, -87.62509],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_d3e7ae1d8341627cb56416992c09b70c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_fe5ec9b4db08458d67e5df041a901037.setIcon(icon_d3e7ae1d8341627cb56416992c09b70c);
+        
+    
+            marker_fe5ec9b4db08458d67e5df041a901037.bindTooltip(
+                `<div>
+                     CHICAGO CULTURAL CENTER FOUNDATION
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f1688d7dd18f5fc26cc38d05456a8ef2 = L.marker(
+                [41.92383, -87.71054],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_e52568c5ff7d56f3352da6f7d8579e90 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_f1688d7dd18f5fc26cc38d05456a8ef2.setIcon(icon_e52568c5ff7d56f3352da6f7d8579e90);
+        
+    
+            marker_f1688d7dd18f5fc26cc38d05456a8ef2.bindTooltip(
+                `<div>
+                     CHICAGO DESIGN MUSEUM
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8174cf513fe856e52f66006abfb0b4c5 = L.marker(
+                [41.87928, -87.63072],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_c6c9a5910b1caa5a400510d9afe80973 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_8174cf513fe856e52f66006abfb0b4c5.setIcon(icon_c6c9a5910b1caa5a400510d9afe80973);
+        
+    
+            marker_8174cf513fe856e52f66006abfb0b4c5.bindTooltip(
+                `<div>
+                     CHICAGO GENEALOGICAL SOCIETY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4c808e7b0b9420af109e41e1faf58e78 = L.marker(
+                [41.79395, -87.62559],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_4ec4923561c420ac31ccbb2251da4008 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_4c808e7b0b9420af109e41e1faf58e78.setIcon(icon_4ec4923561c420ac31ccbb2251da4008);
+        
+    
+            marker_4c808e7b0b9420af109e41e1faf58e78.bindTooltip(
+                `<div>
+                     CHICAGO GOSPEL MUSIC HERITAGE MUSEUM
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5c784935f4ec1969397e5628a002346a = L.marker(
+                [41.91181, -87.63191],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_2b5d54261a9c0f04b1526b82f5c96786 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_5c784935f4ec1969397e5628a002346a.setIcon(icon_2b5d54261a9c0f04b1526b82f5c96786);
+        
+    
+            marker_5c784935f4ec1969397e5628a002346a.bindTooltip(
+                `<div>
+                     CHICAGO HISTORICAL SOCIETY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ba478502a2270424bba2eebad91c3b1b = L.marker(
+                [41.92365, -87.64911],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_7d180495bf65111befd3b33b73e9b92a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_ba478502a2270424bba2eebad91c3b1b.setIcon(icon_7d180495bf65111befd3b33b73e9b92a);
+        
+    
+            marker_ba478502a2270424bba2eebad91c3b1b.bindTooltip(
+                `<div>
+                     CHICAGO HISTORY MUSEUM
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_dc8ed903cb21bc6de66b0b727596dcc4 = L.marker(
+                [41.8743, -87.62425],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_d1865e704d23c35816306869f07e8f2c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_dc8ed903cb21bc6de66b0b727596dcc4.setIcon(icon_d1865e704d23c35816306869f07e8f2c);
+        
+    
+            marker_dc8ed903cb21bc6de66b0b727596dcc4.bindTooltip(
+                `<div>
+                     CHICAGO JEWISH HISTORICAL SOCIETY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_98eecdb8418d9ff16318a27ca8ea84a4 = L.marker(
+                [41.7624, -87.56844],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_1fd26bf12b458f987cb0931e2b917ff8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_98eecdb8418d9ff16318a27ca8ea84a4.setIcon(icon_1fd26bf12b458f987cb0931e2b917ff8);
+        
+    
+            marker_98eecdb8418d9ff16318a27ca8ea84a4.bindTooltip(
+                `<div>
+                     CHICAGO PARK DISTRICT
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_06cc0478f0e2de58c3a92b9a76d67641 = L.marker(
+                [41.83088, -87.62334],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_1f1b8fc43109e005bcf63db4855f15e0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_06cc0478f0e2de58c3a92b9a76d67641.setIcon(icon_1f1b8fc43109e005bcf63db4855f15e0);
+        
+    
+            marker_06cc0478f0e2de58c3a92b9a76d67641.bindTooltip(
+                `<div>
+                     CHICAGO POLICE HISTORICAL ASSOCIATION
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e29e3c93a3845f40552ec80e85cee3e6 = L.marker(
+                [41.87449, -87.63518],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_cf57d56090f3a7df4a08c00a30c40204 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_e29e3c93a3845f40552ec80e85cee3e6.setIcon(icon_cf57d56090f3a7df4a08c00a30c40204);
+        
+    
+            marker_e29e3c93a3845f40552ec80e85cee3e6.bindTooltip(
+                `<div>
+                     CHICAGO RIVER
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6f519700fda54142c94eaa4bfb77ed04 = L.marker(
+                [41.89327, -87.63446],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_84b69467be5e65333b4c328ef01de924 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_6f519700fda54142c94eaa4bfb77ed04.setIcon(icon_84b69467be5e65333b4c328ef01de924);
+        
+    
+            marker_6f519700fda54142c94eaa4bfb77ed04.bindTooltip(
+                `<div>
+                     CHICAGO SPORTS HALL OF FAME
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fedb00ffeed94bc1af030b24236c61e1 = L.marker(
+                [41.89199, -87.61409],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_bf7a88c17fdaefc075b05705b1c83d66 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_fedb00ffeed94bc1af030b24236c61e1.setIcon(icon_bf7a88c17fdaefc075b05705b1c83d66);
+        
+    
+            marker_fedb00ffeed94bc1af030b24236c61e1.bindTooltip(
+                `<div>
+                     CHICAGO SPORTS MUSEUM
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d433cacb7b70156823b153fed5bb7bf8 = L.marker(
+                [41.87928, -87.62437],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_172630362559775711c41607f0b5f2a6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_d433cacb7b70156823b153fed5bb7bf8.setIcon(icon_172630362559775711c41607f0b5f2a6);
+        
+    
+            marker_d433cacb7b70156823b153fed5bb7bf8.bindTooltip(
+                `<div>
+                     CHICAGO SYMPHONY ORCHESTRA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_14e987937cf604753272c2026998a753 = L.marker(
+                [41.9088, -87.69693],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_1293c7644d855281af361f02d8f98258 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_14e987937cf604753272c2026998a753.setIcon(icon_1293c7644d855281af361f02d8f98258);
+        
+    
+            marker_14e987937cf604753272c2026998a753.bindTooltip(
+                `<div>
+                     CHICAGO TEEN MUSEUM
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e174d57a632a01e3438f9b00a571a6b6 = L.marker(
+                [41.97517, -87.90491],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_7e6476046be109885a488d73dd8fe12c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_e174d57a632a01e3438f9b00a571a6b6.setIcon(icon_7e6476046be109885a488d73dd8fe12c);
+        
+    
+            marker_e174d57a632a01e3438f9b00a571a6b6.bindTooltip(
+                `<div>
+                     CHICAGO THEN AND NOW
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_73123cb56ef860cd1786fe68e03175c0 = L.marker(
+                [41.88311, -87.63571],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_02a5be71d8f812904a361fae9ed4033b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_73123cb56ef860cd1786fe68e03175c0.setIcon(icon_02a5be71d8f812904a361fae9ed4033b);
+        
+    
+            marker_73123cb56ef860cd1786fe68e03175c0.bindTooltip(
+                `<div>
+                     CHICAGOLAND SPORTS HALL OF FAME
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a7549da4f87aa33634b9d54af778fbb0 = L.marker(
+                [41.70669, -87.66751],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_bb49d1c3a15bad26031639e5ffacb8ec = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_a7549da4f87aa33634b9d54af778fbb0.setIcon(icon_bb49d1c3a15bad26031639e5ffacb8ec);
+        
+    
+            marker_a7549da4f87aa33634b9d54af778fbb0.bindTooltip(
+                `<div>
+                     CHILDREN'S ART MUSEUM OF CHICAGO NFP
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e08920594a08b9702b0077a7086a8e0c = L.marker(
+                [41.85103, -87.63416],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_0563066444f41c6e09e9dac2d2d75e04 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_e08920594a08b9702b0077a7086a8e0c.setIcon(icon_0563066444f41c6e09e9dac2d2d75e04);
+        
+    
+            marker_e08920594a08b9702b0077a7086a8e0c.bindTooltip(
+                `<div>
+                     CHINATOWN MUSEUM
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_097f0bd4bee793c425de086a0eb923f0 = L.marker(
+                [41.87999, -87.62926],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_5634bcfdb0e19ba9e46bacda502bfd41 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_097f0bd4bee793c425de086a0eb923f0.setIcon(icon_5634bcfdb0e19ba9e46bacda502bfd41);
+        
+    
+            marker_097f0bd4bee793c425de086a0eb923f0.bindTooltip(
+                `<div>
+                     CHURCHILL CENTER
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6b9c602f31c946da85cabe4c1ca9f2c9 = L.marker(
+                [41.85791, -87.62085],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_3ff7523042ef1cb94311c9e384430cd6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_6b9c602f31c946da85cabe4c1ca9f2c9.setIcon(icon_3ff7523042ef1cb94311c9e384430cd6);
+        
+    
+            marker_6b9c602f31c946da85cabe4c1ca9f2c9.bindTooltip(
+                `<div>
+                     CLARKE HOUSE MUSEUM
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_92b7cf2837c7f45e11e956269d67651a = L.marker(
+                [41.79941, -87.76014],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_00f6ec1f9cb070fdc112d4452e4eac17 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_92b7cf2837c7f45e11e956269d67651a.setIcon(icon_00f6ec1f9cb070fdc112d4452e4eac17);
+        
+    
+            marker_92b7cf2837c7f45e11e956269d67651a.bindTooltip(
+                `<div>
+                     CLEAR-RIDGE HISTORICAL SOCIETY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0d2f00f8c3b6ead9e3f9078fc5d089f0 = L.marker(
+                [41.88077, -87.62433],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_88fa3d010b50748aa19e069e8a6c1cd0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_0d2f00f8c3b6ead9e3f9078fc5d089f0.setIcon(icon_88fa3d010b50748aa19e069e8a6c1cd0);
+        
+    
+            marker_0d2f00f8c3b6ead9e3f9078fc5d089f0.bindTooltip(
+                `<div>
+                     COLONEL IL JAMES N PRITZKER LIBRARY FOR THE CITIZEN SOLDIER
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_828a4a035d198912832f202e343e483a = L.marker(
+                [41.87442, -87.62425],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_8bcce85506582d111cee9a5edca8c2e7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_828a4a035d198912832f202e343e483a.setIcon(icon_8bcce85506582d111cee9a5edca8c2e7);
+        
+    
+            marker_828a4a035d198912832f202e343e483a.bindTooltip(
+                `<div>
+                     COLUMBIA COLLEGE ART GALLERY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_24352eb0955c3bf80a510c4cd53b5c41 = L.marker(
+                [41.78279, -87.60447],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_c18a63598c7b562cd6ad4e5d6cdd548f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_24352eb0955c3bf80a510c4cd53b5c41.setIcon(icon_c18a63598c7b562cd6ad4e5d6cdd548f);
+        
+    
+            marker_24352eb0955c3bf80a510c4cd53b5c41.bindTooltip(
+                `<div>
+                     DAVID AND ALFRED SMART MUSEUM OF ART
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_22b0877c57da5a8d71e39ef42b486561 = L.marker(
+                [41.86488, -87.6194],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_bda2294dbf62c6c83dc9161118260afa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_22b0877c57da5a8d71e39ef42b486561.setIcon(icon_bda2294dbf62c6c83dc9161118260afa);
+        
+    
+            marker_22b0877c57da5a8d71e39ef42b486561.bindTooltip(
+                `<div>
+                     DEFINITI SPACE THEATER
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_af1590bffb55464e0d79bbc53c34aa9d = L.marker(
+                [41.9253, -87.65251],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_ca74525022dd8f5e45a1bc1db22e1ab6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_af1590bffb55464e0d79bbc53c34aa9d.setIcon(icon_ca74525022dd8f5e45a1bc1db22e1ab6);
+        
+    
+            marker_af1590bffb55464e0d79bbc53c34aa9d.bindTooltip(
+                `<div>
+                     DEPAUL ART MUSEUM
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8dfcc79b1ae3d2651ed13b0260fbb517 = L.marker(
+                [41.83131, -87.61069],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_9a53ff5fed7de0108ebfbf94c7f793dc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_8dfcc79b1ae3d2651ed13b0260fbb517.setIcon(icon_9a53ff5fed7de0108ebfbf94c7f793dc);
+        
+    
+            marker_8dfcc79b1ae3d2651ed13b0260fbb517.bindTooltip(
+                `<div>
+                     DOUGLAS TOMB STATE HISTORIC SITE
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_48ae3b1070d28e4102847491b08cf6cb = L.marker(
+                [41.85203, -87.6319],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_284f5f3ac0b3619eb5a230f9a035be29 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_48ae3b1070d28e4102847491b08cf6cb.setIcon(icon_284f5f3ac0b3619eb5a230f9a035be29);
+        
+    
+            marker_48ae3b1070d28e4102847491b08cf6cb.bindTooltip(
+                `<div>
+                     DR SUN YAT-SEN MUSEUM OF CHICAGO
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e51caa9c808ab0e6cec41d9c86e19af4 = L.marker(
+                [41.71636, -87.55228],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_9000a9f5299c7af3a4eba62d03613529 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_e51caa9c808ab0e6cec41d9c86e19af4.setIcon(icon_9000a9f5299c7af3a4eba62d03613529);
+        
+    
+            marker_e51caa9c808ab0e6cec41d9c86e19af4.bindTooltip(
+                `<div>
+                     DUSABLE
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8d1d561a0fdda576450f0e57f1ccd127 = L.marker(
+                [41.79217, -87.60681],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_2d0753304f8bff883faee8762fd6e53c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_8d1d561a0fdda576450f0e57f1ccd127.setIcon(icon_2d0753304f8bff883faee8762fd6e53c);
+        
+    
+            marker_8d1d561a0fdda576450f0e57f1ccd127.bindTooltip(
+                `<div>
+                     DUSABLE MUSEUM OF AFRICAN AMERICAN HISTORY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c938d059d2c2181e61405c775c97c43f = L.marker(
+                [41.97915, -87.66978],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_e22c3673af7079daa4e68882753ab5a3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_c938d059d2c2181e61405c775c97c43f.setIcon(icon_e22c3673af7079daa4e68882753ab5a3);
+        
+    
+            marker_c938d059d2c2181e61405c775c97c43f.bindTooltip(
+                `<div>
+                     EDGEWATER HISTORICAL SOCIETY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_07c765741516fc5c070e00d1faf9ef8a = L.marker(
+                [41.93282, -87.63982],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_effe83f70782d6de455dc04d8f7f3ece = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_07c765741516fc5c070e00d1faf9ef8a.setIcon(icon_effe83f70782d6de455dc04d8f7f3ece);
+        
+    
+            marker_07c765741516fc5c070e00d1faf9ef8a.bindTooltip(
+                `<div>
+                     ELKS VETERANS MEMORIAL RESTORATION TRUST
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_95be273f92ecbb475a351cb19b587b84 = L.marker(
+                [41.87052, -87.62415],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_71edcc5bfa67a36d98ec388ca885cd25 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_95be273f92ecbb475a351cb19b587b84.setIcon(icon_71edcc5bfa67a36d98ec388ca885cd25);
+        
+    
+            marker_95be273f92ecbb475a351cb19b587b84.bindTooltip(
+                `<div>
+                     EPISCOPAL RESTORATION ASSOCIATION
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b0f9f4800c5ca238d438ada0690dacfd = L.marker(
+                [41.97682, -87.65633],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_8f5eeb5cb430e9def05bfb615fbf8a06 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_b0f9f4800c5ca238d438ada0690dacfd.setIcon(icon_8f5eeb5cb430e9def05bfb615fbf8a06);
+        
+    
+            marker_b0f9f4800c5ca238d438ada0690dacfd.bindTooltip(
+                `<div>
+                     EVIDENCE OF HOLOCAUST
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_71eed16109a31ca64fd04576834e3255 = L.marker(
+                [41.86475, -87.61919],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_8c82e228a8db0afad838230eb5394191 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_71eed16109a31ca64fd04576834e3255.setIcon(icon_8c82e228a8db0afad838230eb5394191);
+        
+    
+            marker_71eed16109a31ca64fd04576834e3255.bindTooltip(
+                `<div>
+                     FIELD MUSEUM OF NATURAL HISTORY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d98153be05b29b738aff00a3462ceb1e = L.marker(
+                [41.79671, -87.5918],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_249aee1e746ff921dee6c40b065a7ac6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_d98153be05b29b738aff00a3462ceb1e.setIcon(icon_249aee1e746ff921dee6c40b065a7ac6);
+        
+    
+            marker_d98153be05b29b738aff00a3462ceb1e.bindTooltip(
+                `<div>
+                     FILIPINO AMERICAN HISTORICAL SOCIETY OF CHICAGO
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7c56329accfd8f856e4b29550c863777 = L.marker(
+                [41.88188, -87.62948],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_4945b981aa7402dd46fd7fac8a966632 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_7c56329accfd8f856e4b29550c863777.setIcon(icon_4945b981aa7402dd46fd7fac8a966632);
+        
+    
+            marker_7c56329accfd8f856e4b29550c863777.bindTooltip(
+                `<div>
+                     FLINT INSTITUTE OF ARTS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6e2d6d8e5bf04d5a7997114b831b5efc = L.marker(
+                [41.92365, -87.64911],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_55b3750e7fbd39ac4e9f9ed056d4e628 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_6e2d6d8e5bf04d5a7997114b831b5efc.setIcon(icon_55b3750e7fbd39ac4e9f9ed056d4e628);
+        
+    
+            marker_6e2d6d8e5bf04d5a7997114b831b5efc.bindTooltip(
+                `<div>
+                     FOODSEUM
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_257c15caeef42cd348d821f748ee7289 = L.marker(
+                [41.87807, -87.62968],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_b3d60a1670f0746f846cc61d446a77c6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_257c15caeef42cd348d821f748ee7289.setIcon(icon_b3d60a1670f0746f846cc61d446a77c6);
+        
+    
+            marker_257c15caeef42cd348d821f748ee7289.bindTooltip(
+                `<div>
+                     FRANK LLOYD WRIGHT BUILDING CONSERVANCY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_68e828404828144a0427b6822dc27a46 = L.marker(
+                [41.87662, -87.62429],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_0da4c8da68bcce591bb82f5ed12484ea = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_68e828404828144a0427b6822dc27a46.setIcon(icon_0da4c8da68bcce591bb82f5ed12484ea);
+        
+    
+            marker_68e828404828144a0427b6822dc27a46.bindTooltip(
+                `<div>
+                     GAGE GALLERY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1c1d49d5588971073ce59b0c148979b2 = L.marker(
+                [41.88069, -87.62415],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_a9842bb8c9fa7799f03f4c3513e6ba09 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_1c1d49d5588971073ce59b0c148979b2.setIcon(icon_a9842bb8c9fa7799f03f4c3513e6ba09);
+        
+    
+            marker_1c1d49d5588971073ce59b0c148979b2.bindTooltip(
+                `<div>
+                     GALLERY 2
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1e59291829e27b70ff2a8f52797bb580 = L.marker(
+                [41.88758, -87.7163],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_5a2d5b8685f8e9ed4fcb91ba1618637c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_1e59291829e27b70ff2a8f52797bb580.setIcon(icon_5a2d5b8685f8e9ed4fcb91ba1618637c);
+        
+    
+            marker_1e59291829e27b70ff2a8f52797bb580.bindTooltip(
+                `<div>
+                     GARFIELD PARK CONSERVATORY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_19fdecd6091fc8bc7310bb9965a9a161 = L.marker(
+                [41.85791, -87.62085],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_608e2d997ab1190370c7c9403a5940b0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_19fdecd6091fc8bc7310bb9965a9a161.setIcon(icon_608e2d997ab1190370c7c9403a5940b0);
+        
+    
+            marker_19fdecd6091fc8bc7310bb9965a9a161.bindTooltip(
+                `<div>
+                     GLESSNER HOUSE MUSEUM
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e789d1fc351a6412f23b0d6ae6ada738 = L.marker(
+                [41.90955, -87.62985],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_c411baf843c3c0e22de723fdd614ab98 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_e789d1fc351a6412f23b0d6ae6ada738.setIcon(icon_c411baf843c3c0e22de723fdd614ab98);
+        
+    
+            marker_e789d1fc351a6412f23b0d6ae6ada738.bindTooltip(
+                `<div>
+                     GRAHAM FOUNDATION FOR ADVANCED STUDIES IN FINE ARTS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e0d6e06977667d405843a1f8357eb83f = L.marker(
+                [41.86488, -87.6194],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_82462b96530173e7cd8fe27f9dd75d3d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_e0d6e06977667d405843a1f8357eb83f.setIcon(icon_82462b96530173e7cd8fe27f9dd75d3d);
+        
+    
+            marker_e0d6e06977667d405843a1f8357eb83f.bindTooltip(
+                `<div>
+                     GRAINGER SKY THEATER
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_978bd504b272977cbe15c9fb5bf7906d = L.marker(
+                [41.87729, -87.64713],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_9f76f38e15f6ee709692c840624d9dbd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_978bd504b272977cbe15c9fb5bf7906d.setIcon(icon_9f76f38e15f6ee709692c840624d9dbd);
+        
+    
+            marker_978bd504b272977cbe15c9fb5bf7906d.bindTooltip(
+                `<div>
+                     HELLENIC MUSEUM AND CULTURAL CENTER
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6853dd968c742a72565f7a5d2c82660c = L.marker(
+                [41.9017, -87.62503],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_45c3ecd6127b0e710a52d0aa49736bfc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_6853dd968c742a72565f7a5d2c82660c.setIcon(icon_45c3ecd6127b0e710a52d0aa49736bfc);
+        
+    
+            marker_6853dd968c742a72565f7a5d2c82660c.bindTooltip(
+                `<div>
+                     HISTORIC PRESERVATION FOUNDATION OF THE FORTNIGHTLY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d1a072666b3061163c7d5a7ca8d8eef4 = L.marker(
+                [41.94341, -87.83257],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_bc23a4e962be7b490126f1d1e92d8fde = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_d1a072666b3061163c7d5a7ca8d8eef4.setIcon(icon_bc23a4e962be7b490126f1d1e92d8fde);
+        
+    
+            marker_d1a072666b3061163c7d5a7ca8d8eef4.bindTooltip(
+                `<div>
+                     HOOSIER TRACTION MEET
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_db42f969ca0c8338701d402501686974 = L.marker(
+                [41.80406, -87.58656],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_a7699dbbcb53a20c0f8411cb749b225f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_db42f969ca0c8338701d402501686974.setIcon(icon_a7699dbbcb53a20c0f8411cb749b225f);
+        
+    
+            marker_db42f969ca0c8338701d402501686974.bindTooltip(
+                `<div>
+                     HYDE PARK ART CENTER
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9928016ca56621cfb9880596f250b2e4 = L.marker(
+                [41.79516, -87.58747],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_9e090a9bdb36f5a19ec96210b617816e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_9928016ca56621cfb9880596f250b2e4.setIcon(icon_9e090a9bdb36f5a19ec96210b617816e);
+        
+    
+            marker_9928016ca56621cfb9880596f250b2e4.bindTooltip(
+                `<div>
+                     HYDE PARK HISTORICAL SOCIETY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6ad8019720b1b1f0eb5cb45d6e433748 = L.marker(
+                [41.88188, -87.63162],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_68ab1187ad24bd08797559604bd74ecf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_6ad8019720b1b1f0eb5cb45d6e433748.setIcon(icon_68ab1187ad24bd08797559604bd74ecf);
+        
+    
+            marker_6ad8019720b1b1f0eb5cb45d6e433748.bindTooltip(
+                `<div>
+                     ILLINOIS LABOR HISTORY SOCIETY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_62758b5d18f939f3e79b7acd7f1aa19e = L.marker(
+                [41.88456, -87.63095],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_803470b7faa145a61da0ab037fc9fcce = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_62758b5d18f939f3e79b7acd7f1aa19e.setIcon(icon_803470b7faa145a61da0ab037fc9fcce);
+        
+    
+            marker_62758b5d18f939f3e79b7acd7f1aa19e.bindTooltip(
+                `<div>
+                     ILLINOIS STATE MUSEUM CHICAGO GALLERY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2e33ff544f55dd863da20fcebbbdff80 = L.marker(
+                [41.99632, -87.69968],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_5061078eb659aa7c97d1ca8668f56bcc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_2e33ff544f55dd863da20fcebbbdff80.setIcon(icon_5061078eb659aa7c97d1ca8668f56bcc);
+        
+    
+            marker_2e33ff544f55dd863da20fcebbbdff80.bindTooltip(
+                `<div>
+                     INDO-AMERICAN HERITAGE MUSEUM
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_26623b2ebf1c5504de9e281de64807b5 = L.marker(
+                [41.92615, -87.66766],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_02b28a7f4a8c0a1936d292dc489c0e31 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_26623b2ebf1c5504de9e281de64807b5.setIcon(icon_02b28a7f4a8c0a1936d292dc489c0e31);
+        
+    
+            marker_26623b2ebf1c5504de9e281de64807b5.bindTooltip(
+                `<div>
+                     INSTITUTE MUSEUM
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0dc4a26d4496cdc628a349e7055af331 = L.marker(
+                [41.90103, -87.68066],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_6eea5d77e3dd6488936919551da60e68 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_0dc4a26d4496cdc628a349e7055af331.setIcon(icon_6eea5d77e3dd6488936919551da60e68);
+        
+    
+            marker_0dc4a26d4496cdc628a349e7055af331.bindTooltip(
+                `<div>
+                     INSTITUTE OF PUERTO RICAN ART
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6702b3acf2643d9af7f28688d8ee6a58 = L.marker(
+                [41.89386, -87.63634],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_7d1885d56127de609d1caa70c206aa00 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_6702b3acf2643d9af7f28688d8ee6a58.setIcon(icon_7d1885d56127de609d1caa70c206aa00);
+        
+    
+            marker_6702b3acf2643d9af7f28688d8ee6a58.bindTooltip(
+                `<div>
+                     INTERNATIONAL CINEMA MUSEUM
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4c1c8c4c28a1d6c8df64df40ee78189e = L.marker(
+                [41.91011, -87.6263],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_b35f4fc73466685bf233b4f2a70f6990 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_4c1c8c4c28a1d6c8df64df40ee78189e.setIcon(icon_b35f4fc73466685bf233b4f2a70f6990);
+        
+    
+            marker_4c1c8c4c28a1d6c8df64df40ee78189e.bindTooltip(
+                `<div>
+                     INTERNATIONAL MUSEUM OF SURGICAL SCIENCE
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d15739614936059ad63f4b39bd37f25e = L.marker(
+                [41.80976, -87.71146],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_12039fc327a6ce4a462bf2366549139c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_d15739614936059ad63f4b39bd37f25e.setIcon(icon_12039fc327a6ce4a462bf2366549139c);
+        
+    
+            marker_d15739614936059ad63f4b39bd37f25e.bindTooltip(
+                `<div>
+                     INTERNATIONAL POLKA ASSOCIATION
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9faa0ee485d3ffa0f503448baf90489c = L.marker(
+                [41.89575, -87.65483],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_4b649076e2355b22cf109b82849cbe13 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_9faa0ee485d3ffa0f503448baf90489c.setIcon(icon_4b649076e2355b22cf109b82849cbe13);
+        
+    
+            marker_9faa0ee485d3ffa0f503448baf90489c.bindTooltip(
+                `<div>
+                     INTUIT CENTER FOR INTUITIVE
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_900aa60d0d707ab933b5b1fb5086eeff = L.marker(
+                [41.89575, -87.65483],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_864637f4b6255ffe73acb590e581a6b9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_900aa60d0d707ab933b5b1fb5086eeff.setIcon(icon_864637f4b6255ffe73acb590e581a6b9);
+        
+    
+            marker_900aa60d0d707ab933b5b1fb5086eeff.bindTooltip(
+                `<div>
+                     INTUIT: THE CENTER FOR INTUITIVE AND OUTSIDER ART
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_80bb39a2dbbf756091072567ce42fc77 = L.marker(
+                [41.9649, -87.74404],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_17d4dc996fbbf7631b11361c17d39486 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_80bb39a2dbbf756091072567ce42fc77.setIcon(icon_17d4dc996fbbf7631b11361c17d39486);
+        
+    
+            marker_80bb39a2dbbf756091072567ce42fc77.bindTooltip(
+                `<div>
+                     IRISH AMERICAN HERITAGE CENTER
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e947d4326fdf939fce808f8cbd0bf72c = L.marker(
+                [41.94998, -87.73227],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_fdd2cc266eab6b232ed2b1592630cf67 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_e947d4326fdf939fce808f8cbd0bf72c.setIcon(icon_fdd2cc266eab6b232ed2b1592630cf67);
+        
+    
+            marker_e947d4326fdf939fce808f8cbd0bf72c.bindTooltip(
+                `<div>
+                     IRVING PARK HISTORICAL SOCIETY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3a03f8d379ab13c2516c238ee0cd3388 = L.marker(
+                [41.88456, -87.63095],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_a7593089ed7803ede2c5a16cf93fc38b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_3a03f8d379ab13c2516c238ee0cd3388.setIcon(icon_a7593089ed7803ede2c5a16cf93fc38b);
+        
+    
+            marker_3a03f8d379ab13c2516c238ee0cd3388.bindTooltip(
+                `<div>
+                     ISM CHICAGO GALLERY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3e9286aac5b563e9dd14ca1a96ca412a = L.marker(
+                [41.87117, -87.6472],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_f6ee654e0b4baf1e6d4e6fca98b9c222 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_3e9286aac5b563e9dd14ca1a96ca412a.setIcon(icon_f6ee654e0b4baf1e6d4e6fca98b9c222);
+        
+    
+            marker_3e9286aac5b563e9dd14ca1a96ca412a.bindTooltip(
+                `<div>
+                     JANE ADDAMS HULL-HOUSE MUSEUM
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8f7444cd2ecd57a26e057c5682701b0d = L.marker(
+                [41.88199, -87.62931],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_36c6a93a1f020290757d2cf0c18b976c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_8f7444cd2ecd57a26e057c5682701b0d.setIcon(icon_36c6a93a1f020290757d2cf0c18b976c);
+        
+    
+            marker_8f7444cd2ecd57a26e057c5682701b0d.bindTooltip(
+                `<div>
+                     JANE ADDAMS HULL-HOUSE MUSEUM ASSOCIATION
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_50118e7e1976d20a20cda82c0ea98d6f = L.marker(
+                [41.71759, -87.66895],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_a28d8c260d89bfda5bff0dcd9930dcba = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_50118e7e1976d20a20cda82c0ea98d6f.setIcon(icon_a28d8c260d89bfda5bff0dcd9930dcba);
+        
+    
+            marker_50118e7e1976d20a20cda82c0ea98d6f.bindTooltip(
+                `<div>
+                     JOHN H VANDERPOEL ART ASSOCIATION
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f0665d78bb493ef8e30f8e924ff3b160 = L.marker(
+                [41.90382, -87.6303],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_52681deffe1f544a5e1ededcee321c61 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_f0665d78bb493ef8e30f8e924ff3b160.setIcon(icon_52681deffe1f544a5e1ededcee321c61);
+        
+    
+            marker_f0665d78bb493ef8e30f8e924ff3b160.bindTooltip(
+                `<div>
+                     KOREAN WAR VETERANS NATIONAL MUSEUM & LIBRARY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a5fc338da311d35967d18ba3c46a7517 = L.marker(
+                [41.95666, -87.72366],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_968b62837be0c75174c8ec174e7b74ae = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_a5fc338da311d35967d18ba3c46a7517.setIcon(icon_968b62837be0c75174c8ec174e7b74ae);
+        
+    
+            marker_a5fc338da311d35967d18ba3c46a7517.bindTooltip(
+                `<div>
+                     LATVIAN FOLK ART MUSEUM
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d675804ad4eff774ba7bb029cc6ca8ce = L.marker(
+                [41.87067, -87.72154],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_453247b08d5d0ee4d17cb225c820eb9a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_d675804ad4eff774ba7bb029cc6ca8ce.setIcon(icon_453247b08d5d0ee4d17cb225c820eb9a);
+        
+    
+            marker_d675804ad4eff774ba7bb029cc6ca8ce.bindTooltip(
+                `<div>
+                     LAWNDALE HISTORICAL AND CULTURAL SOCIETY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_22ae8664a028171f010cb43fbc5e8c05 = L.marker(
+                [41.99875, -87.66806],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_84cac15287f088b946162c687b4d14c8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_22ae8664a028171f010cb43fbc5e8c05.setIcon(icon_84cac15287f088b946162c687b4d14c8);
+        
+    
+            marker_22ae8664a028171f010cb43fbc5e8c05.bindTooltip(
+                `<div>
+                     LEATHER ARCHIVES AND MUSEUM
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_551cd4adab941a67e32a1d8a10b6fbf9 = L.marker(
+                [41.92271, -87.63238],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_bcd7607073191970b57de0846353ee00 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_551cd4adab941a67e32a1d8a10b6fbf9.setIcon(icon_bcd7607073191970b57de0846353ee00);
+        
+    
+            marker_551cd4adab941a67e32a1d8a10b6fbf9.bindTooltip(
+                `<div>
+                     LINCOLN PARK ZOO
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_47aa72d064aa14ad0f16fa4d9a9ad9c7 = L.marker(
+                [41.79186, -87.68266],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_3f143f04dcdcf31b399294cf5ad02782 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_47aa72d064aa14ad0f16fa4d9a9ad9c7.setIcon(icon_3f143f04dcdcf31b399294cf5ad02782);
+        
+    
+            marker_47aa72d064aa14ad0f16fa4d9a9ad9c7.bindTooltip(
+                `<div>
+                     LITHUANIAN MUSEUM
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_71f65bd3d93a0dd1b1fd3025a49095ac = L.marker(
+                [41.89756, -87.62332],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_f4b6c46424ab9333689e1a42b9571d24 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_71f65bd3d93a0dd1b1fd3025a49095ac.setIcon(icon_f4b6c46424ab9333689e1a42b9571d24);
+        
+    
+            marker_71f65bd3d93a0dd1b1fd3025a49095ac.bindTooltip(
+                `<div>
+                     LOYOLA UNIVERSITY MUSEUM OF ART
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_30825ff1af8f0cb24e6f8688172a6d83 = L.marker(
+                [41.88419, -87.62294],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_eba1784b9a6a9e1bda09ac8d7e6c3bb3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_30825ff1af8f0cb24e6f8688172a6d83.setIcon(icon_eba1784b9a6a9e1bda09ac8d7e6c3bb3);
+        
+    
+            marker_30825ff1af8f0cb24e6f8688172a6d83.bindTooltip(
+                `<div>
+                     LURIE GARDEN
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d287349ec32e69fd3c5fbfabaab06053 = L.marker(
+                [41.88222, -87.63686],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_10d3d925c228bcbac9453a2ffba84b1c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_d287349ec32e69fd3c5fbfabaab06053.setIcon(icon_10d3d925c228bcbac9453a2ffba84b1c);
+        
+    
+            marker_d287349ec32e69fd3c5fbfabaab06053.bindTooltip(
+                `<div>
+                     LYRIC OPERA OF CHICAGO
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5014b5eeb5c5c36b599d50a443cdca47 = L.marker(
+                [41.89756, -87.62332],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_3738c532b6f151ad161750c6458572a3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_5014b5eeb5c5c36b599d50a443cdca47.setIcon(icon_3738c532b6f151ad161750c6458572a3);
+        
+    
+            marker_5014b5eeb5c5c36b599d50a443cdca47.bindTooltip(
+                `<div>
+                     MARTIN D'ARCY GALLERY OF ART
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_68178eab8554ec09a7134110441f103e = L.marker(
+                [41.87997, -87.6368],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_7a8b8d5bdbcd7643ea7f5f898e832a50 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_68178eab8554ec09a7134110441f103e.setIcon(icon_7a8b8d5bdbcd7643ea7f5f898e832a50);
+        
+    
+            marker_68178eab8554ec09a7134110441f103e.bindTooltip(
+                `<div>
+                     MATT LAMB CHICAGO MUSEUM
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7237afad87126300ec15274249f29a47 = L.marker(
+                [41.88864, -87.6245],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_a23a9fd8a86f4331dd2fb8ec8dd8826a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_7237afad87126300ec15274249f29a47.setIcon(icon_a23a9fd8a86f4331dd2fb8ec8dd8826a);
+        
+    
+            marker_7237afad87126300ec15274249f29a47.bindTooltip(
+                `<div>
+                     MCCORMICK BRIDGEHOUSE AND CHICAGO RIVER MUSEUM
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d8446dc01a3e908af9912a6f39d3e820 = L.marker(
+                [41.8858, -87.62442],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_e8f51127b1ef5b562c779b3782ef29e9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_d8446dc01a3e908af9912a6f39d3e820.setIcon(icon_e8f51127b1ef5b562c779b3782ef29e9);
+        
+    
+            marker_d8446dc01a3e908af9912a6f39d3e820.bindTooltip(
+                `<div>
+                     MCCORMICK FREEDOM MUSEUM
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f6e6f4cb252ccc3dce0e20904baea275 = L.marker(
+                [41.88419, -87.62294],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_ce909c2be2a81a845ad24f2772b9d4f6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_f6e6f4cb252ccc3dce0e20904baea275.setIcon(icon_ce909c2be2a81a845ad24f2772b9d4f6);
+        
+    
+            marker_f6e6f4cb252ccc3dce0e20904baea275.bindTooltip(
+                `<div>
+                     MILLENIUM PARK
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5ead6f2c7b7e32aadf154350f835daa4 = L.marker(
+                [41.74496, -87.56726],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_3f9fda1b143e5beca34e065b9b20112e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_5ead6f2c7b7e32aadf154350f835daa4.setIcon(icon_3f9fda1b143e5beca34e065b9b20112e);
+        
+    
+            marker_5ead6f2c7b7e32aadf154350f835daa4.bindTooltip(
+                `<div>
+                     MUSEUM AFRICA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cfa7acb2109d2f0e45fdea1d9a9cbba3 = L.marker(
+                [41.88828, -87.62812],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_0f5ddbdb5edf0534a0ef83339165e6b6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_cfa7acb2109d2f0e45fdea1d9a9cbba3.setIcon(icon_0f5ddbdb5edf0534a0ef83339165e6b6);
+        
+    
+            marker_cfa7acb2109d2f0e45fdea1d9a9cbba3.bindTooltip(
+                `<div>
+                     MUSEUM OF BROADCAST COMMUNICATIONS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_53c07fd8fb8a891313ee816b79c51cc5 = L.marker(
+                [41.89685, -87.62195],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_5af9c51e6a64f38e048442b57ca9609a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_53c07fd8fb8a891313ee816b79c51cc5.setIcon(icon_5af9c51e6a64f38e048442b57ca9609a);
+        
+    
+            marker_53c07fd8fb8a891313ee816b79c51cc5.bindTooltip(
+                `<div>
+                     MUSEUM OF CONTEMPORARY ART
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_095583b485053d0876df2aeb042b8400 = L.marker(
+                [41.87442, -87.62425],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_b96c464dab38f0ff3334cc2b067a9275 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_095583b485053d0876df2aeb042b8400.setIcon(icon_b96c464dab38f0ff3334cc2b067a9275);
+        
+    
+            marker_095583b485053d0876df2aeb042b8400.bindTooltip(
+                `<div>
+                     MUSEUM OF CONTEMPORARY PHOTOGRAPHY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_aa3902f78012f95b08c74e5af9f7ac97 = L.marker(
+                [41.87442, -87.62425],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_fb97dbef40cc6dfa553846baab186c4a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_aa3902f78012f95b08c74e5af9f7ac97.setIcon(icon_fb97dbef40cc6dfa553846baab186c4a);
+        
+    
+            marker_aa3902f78012f95b08c74e5af9f7ac97.bindTooltip(
+                `<div>
+                     MUSEUM OF CONTEMPORARY PHOTOGRAPHY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_05571e5b52de580afa05d00cc10800a2 = L.marker(
+                [41.89685, -87.62195],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_f54ec91fb2f615c0cc79d56b373452b4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_05571e5b52de580afa05d00cc10800a2.setIcon(icon_f54ec91fb2f615c0cc79d56b373452b4);
+        
+    
+            marker_05571e5b52de580afa05d00cc10800a2.bindTooltip(
+                `<div>
+                     MUSEUM OF MODERN ART
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9cd30df5a2714912c5b80a0f870e2642 = L.marker(
+                [41.78279, -87.60447],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_6d90c377aa969b5e5035badc7f427944 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_9cd30df5a2714912c5b80a0f870e2642.setIcon(icon_6d90c377aa969b5e5035badc7f427944);
+        
+    
+            marker_9cd30df5a2714912c5b80a0f870e2642.bindTooltip(
+                `<div>
+                     MUSEUM OF SCIENCE AND INDUSTRY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_76b3f4bf7b5189f3f538b352fff7166d = L.marker(
+                [41.89522, -87.62242],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_36911c258792826146cdcbadf3ba2379 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_76b3f4bf7b5189f3f538b352fff7166d.setIcon(icon_36911c258792826146cdcbadf3ba2379);
+        
+    
+            marker_76b3f4bf7b5189f3f538b352fff7166d.bindTooltip(
+                `<div>
+                     MUSEUM OF SPORTS HISTORY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a1c33d4b2b660c6f8a56761ff3d9e37e = L.marker(
+                [41.85487, -87.66359],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_700396a4b8e0b75e20d99004b9ca9ac2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_a1c33d4b2b660c6f8a56761ff3d9e37e.setIcon(icon_700396a4b8e0b75e20d99004b9ca9ac2);
+        
+    
+            marker_a1c33d4b2b660c6f8a56761ff3d9e37e.bindTooltip(
+                `<div>
+                     MUSEUM OF UNIVERSAL SELF-EXPRESSION
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a5006334fa498f7d32495071c691c8bd = L.marker(
+                [41.87874, -87.63658],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_13b31b5feadb7f82ed49ed55d0e305c4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_a5006334fa498f7d32495071c691c8bd.setIcon(icon_13b31b5feadb7f82ed49ed55d0e305c4);
+        
+    
+            marker_a5006334fa498f7d32495071c691c8bd.bindTooltip(
+                `<div>
+                     MUSEUMS IN HAND
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e21d57800b64056b5c022995ee76a6c9 = L.marker(
+                [41.95313, -87.77713],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_402a2ab1cd12eb5188d547d82b219d11 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_e21d57800b64056b5c022995ee76a6c9.setIcon(icon_402a2ab1cd12eb5188d547d82b219d11);
+        
+    
+            marker_e21d57800b64056b5c022995ee76a6c9.bindTooltip(
+                `<div>
+                     NAPOLEONIC HISTORICAL SOCIETY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_92398eabc0a3339d0979f7f4241011ee = L.marker(
+                [41.75933, -87.72229],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_2b5bd5390ac05471d72b860e35fe1139 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_92398eabc0a3339d0979f7f4241011ee.setIcon(icon_2b5bd5390ac05471d72b860e35fe1139);
+        
+    
+            marker_92398eabc0a3339d0979f7f4241011ee.bindTooltip(
+                `<div>
+                     NATIONAL ARCHIVES AT CHICAGO
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_491993911f0ab5c9f933bf0724ada053 = L.marker(
+                [41.87729, -87.64713],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_2cc1dd27f241ec9d093fc3d3d88b8017 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_491993911f0ab5c9f933bf0724ada053.setIcon(icon_2cc1dd27f241ec9d093fc3d3d88b8017);
+        
+    
+            marker_491993911f0ab5c9f933bf0724ada053.bindTooltip(
+                `<div>
+                     NATIONAL HELLENIC MUSEUM
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_10e114c174fbf3cc2a03288382048e9f = L.marker(
+                [41.86922, -87.66295],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_d805bf04c7ebcf4bfb23d0ce45313938 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_10e114c174fbf3cc2a03288382048e9f.setIcon(icon_d805bf04c7ebcf4bfb23d0ce45313938);
+        
+    
+            marker_10e114c174fbf3cc2a03288382048e9f.bindTooltip(
+                `<div>
+                     NATIONAL ITALIAN AMERICAN SPORTS HALL OF FAME
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fa7e16680c6d5249388ab3771d5822e4 = L.marker(
+                [41.88311, -87.63322],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_c76276ef092af533de2a129260ca6f13 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_fa7e16680c6d5249388ab3771d5822e4.setIcon(icon_c76276ef092af533de2a129260ca6f13);
+        
+    
+            marker_fa7e16680c6d5249388ab3771d5822e4.bindTooltip(
+                `<div>
+                     NATIONAL MUSEUM OF HEALTH AND MEDICINE CHICAGO
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a090e7ceeb0d1bb26a078e4623532983 = L.marker(
+                [41.85597, -87.67234],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_0665f0ab231d9e3b836f8b0d2a8dcfca = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_a090e7ceeb0d1bb26a078e4623532983.setIcon(icon_0665f0ab231d9e3b836f8b0d2a8dcfca);
+        
+    
+            marker_a090e7ceeb0d1bb26a078e4623532983.bindTooltip(
+                `<div>
+                     NATIONAL MUSEUM OF MEXICAN ART
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3d2387b768f8a1396bde16a695d8dacd = L.marker(
+                [41.89325, -87.64114],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_047352bd5edeffd960e55336f5e27dd2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_3d2387b768f8a1396bde16a695d8dacd.setIcon(icon_047352bd5edeffd960e55336f5e27dd2);
+        
+    
+            marker_3d2387b768f8a1396bde16a695d8dacd.bindTooltip(
+                `<div>
+                     NATIONAL PUBLIC HOUSING MUSEUM
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9aceaedd40142dff5aa7cdfb95d5849e = L.marker(
+                [41.89586, -87.6849],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_135a0511b0aa63ccf7354231a5a422da = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_9aceaedd40142dff5aa7cdfb95d5849e.setIcon(icon_135a0511b0aa63ccf7354231a5a422da);
+        
+    
+            marker_9aceaedd40142dff5aa7cdfb95d5849e.bindTooltip(
+                `<div>
+                     NATIONAL UKRANIAN MUSEUM
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_579f45dab9812b05986fa00c5d3c2dd3 = L.marker(
+                [41.95469, -87.7492],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_d7d129ba6daf3c252234523ad4152434 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_579f45dab9812b05986fa00c5d3c2dd3.setIcon(icon_d7d129ba6daf3c252234523ad4152434);
+        
+    
+            marker_579f45dab9812b05986fa00c5d3c2dd3.bindTooltip(
+                `<div>
+                     NATIONAL VIETNAM VETERANS ART MUSEUM
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f17b1b356d3bb5bda914f5d80b3963e8 = L.marker(
+                [41.89199, -87.61415],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_120c0f212b80a2ed1d8e616db4eaa09f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_f17b1b356d3bb5bda914f5d80b3963e8.setIcon(icon_120c0f212b80a2ed1d8e616db4eaa09f);
+        
+    
+            marker_f17b1b356d3bb5bda914f5d80b3963e8.bindTooltip(
+                `<div>
+                     NAVY PIER
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9976513f07858dba039e53cb1b49a585 = L.marker(
+                [41.89989, -87.63037],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_9866acf7e09ef435508fa8998702698f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_9976513f07858dba039e53cb1b49a585.setIcon(icon_9866acf7e09ef435508fa8998702698f);
+        
+    
+            marker_9976513f07858dba039e53cb1b49a585.bindTooltip(
+                `<div>
+                     NEWBERRY LIBRARY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4f87c0bd10f90b516797e377041ed910 = L.marker(
+                [41.87922, -87.62925],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_0ccd6bc966a4158db9184ac0c761986b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_4f87c0bd10f90b516797e377041ed910.setIcon(icon_0ccd6bc966a4158db9184ac0c761986b);
+        
+    
+            marker_4f87c0bd10f90b516797e377041ed910.bindTooltip(
+                `<div>
+                     NORTHERN DISTRICT OF ILLINOIS COURT HISTORICAL ASSOCIATION
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ff1574046db416a0881da46197f3bf40 = L.marker(
+                [41.98376, -87.79519],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_f30a63d627db1299e577dfc354e479af = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_ff1574046db416a0881da46197f3bf40.setIcon(icon_f30a63d627db1299e577dfc354e479af);
+        
+    
+            marker_ff1574046db416a0881da46197f3bf40.bindTooltip(
+                `<div>
+                     NORWOOD PARK HISTORICAL SOCIETY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_431bbf383f2ac3eecdc4de69ab28b4d9 = L.marker(
+                [41.99446, -87.76939],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_f4764e81bc97d6f0bec628693ad172d3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_431bbf383f2ac3eecdc4de69ab28b4d9.setIcon(icon_f4764e81bc97d6f0bec628693ad172d3);
+        
+    
+            marker_431bbf383f2ac3eecdc4de69ab28b4d9.bindTooltip(
+                `<div>
+                     OLD EDGEBROOK HISTORICAL SOCIETY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_68ea0bc50b1266bdc9f6cdd0f267744a = L.marker(
+                [41.78279, -87.60447],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_1d3b91761d0b2e21efad054508d184bf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_68ea0bc50b1266bdc9f6cdd0f267744a.setIcon(icon_1d3b91761d0b2e21efad054508d184bf);
+        
+    
+            marker_68ea0bc50b1266bdc9f6cdd0f267744a.bindTooltip(
+                `<div>
+                     ORIENTAL INSTITUTE MUSEUM
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_89c132852ce8c2e8c38a289c44e9ea88 = L.marker(
+                [41.88887, -87.68428],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_672163184ae24df6d6dfd6a999f4b470 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_89c132852ce8c2e8c38a289c44e9ea88.setIcon(icon_672163184ae24df6d6dfd6a999f4b470);
+        
+    
+            marker_89c132852ce8c2e8c38a289c44e9ea88.bindTooltip(
+                `<div>
+                     PADEREWSKI ASSOCIATION
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_32506a86eb0fd4e4b03436e63a30c847 = L.marker(
+                [41.90097, -87.62999],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_96af01e313684a211293f51f695e931a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_32506a86eb0fd4e4b03436e63a30c847.setIcon(icon_96af01e313684a211293f51f695e931a);
+        
+    
+            marker_32506a86eb0fd4e4b03436e63a30c847.bindTooltip(
+                `<div>
+                     PALETTE AND CHISEL ART ACADEMY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4a8f04a134e5b15ece5f88e519b7d35b = L.marker(
+                [41.99005, -87.66295],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_73e28badaef9d95f74a3af4bbc5a42a1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_4a8f04a134e5b15ece5f88e519b7d35b.setIcon(icon_73e28badaef9d95f74a3af4bbc5a42a1);
+        
+    
+            marker_4a8f04a134e5b15ece5f88e519b7d35b.bindTooltip(
+                `<div>
+                     PARTISAN ARTS INTERNATIONAL
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fe571cca0fca5c2990948177a18bd4a7 = L.marker(
+                [41.80937, -87.69677],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_a33c9839f3373590be48e4238078702a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_fe571cca0fca5c2990948177a18bd4a7.setIcon(icon_a33c9839f3373590be48e4238078702a);
+        
+    
+            marker_fe571cca0fca5c2990948177a18bd4a7.bindTooltip(
+                `<div>
+                     PETERSON GARDEN PROJECT
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_21e492af954dfa2c028c31bf0be2e966 = L.marker(
+                [41.8997, -87.66093],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_6bc82c291e543c82fd87926b7e3a29fb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_21e492af954dfa2c028c31bf0be2e966.setIcon(icon_6bc82c291e543c82fd87926b7e3a29fb);
+        
+    
+            marker_21e492af954dfa2c028c31bf0be2e966.bindTooltip(
+                `<div>
+                     POLISH MUSEUM OF AMERICA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6e836397bd1192473004ab63b1439c13 = L.marker(
+                [41.73864, -87.69064],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_3e7670e4fb8fcfda2fc6c75f0788d536 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_6e836397bd1192473004ab63b1439c13.setIcon(icon_3e7670e4fb8fcfda2fc6c75f0788d536);
+        
+    
+            marker_6e836397bd1192473004ab63b1439c13.bindTooltip(
+                `<div>
+                     PORTRAITS OF GREAT AMERICAN WOMEN ACHIEVERS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_eaf882a3681eb4a04ec11b2de17744f3 = L.marker(
+                [41.95386, -87.65798],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_edf2729ccf5bad9fd09f125abd1b257b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_eaf882a3681eb4a04ec11b2de17744f3.setIcon(icon_edf2729ccf5bad9fd09f125abd1b257b);
+        
+    
+            marker_eaf882a3681eb4a04ec11b2de17744f3.bindTooltip(
+                `<div>
+                     PRAK-SIS CONTEMPORARY ART ASSOCIATION
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1866546f7f917bcfe230ca7794201071 = L.marker(
+                [41.72092, -87.61409],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_54934a86c25f1e65abecae8fcc663628 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_1866546f7f917bcfe230ca7794201071.setIcon(icon_54934a86c25f1e65abecae8fcc663628);
+        
+    
+            marker_1866546f7f917bcfe230ca7794201071.bindTooltip(
+                `<div>
+                     PRESIDENT'S GALLERY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5e370e83165c22ec7cd9e4a9aa23ab4b = L.marker(
+                [41.88584, -87.62683],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_c11010712df1d6d39762da9308b29960 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_5e370e83165c22ec7cd9e4a9aa23ab4b.setIcon(icon_c11010712df1d6d39762da9308b29960);
+        
+    
+            marker_5e370e83165c22ec7cd9e4a9aa23ab4b.bindTooltip(
+                `<div>
+                     PRESIDENT�S GALLERY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6950a95d6ce11797a7d5e36d201b9bce = L.marker(
+                [41.81227, -87.60816],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_1d360562cf03480145984e108bd93ced = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_6950a95d6ce11797a7d5e36d201b9bce.setIcon(icon_1d360562cf03480145984e108bd93ced);
+        
+    
+            marker_6950a95d6ce11797a7d5e36d201b9bce.bindTooltip(
+                `<div>
+                     PROJECT EXPLORATION
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3c935515504b6a80f66a78c04a3a1212 = L.marker(
+                [41.72913, -87.56099],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_a860040faf53d2cd0ac30c44c4f49ff6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_3c935515504b6a80f66a78c04a3a1212.setIcon(icon_a860040faf53d2cd0ac30c44c4f49ff6);
+        
+    
+            marker_3c935515504b6a80f66a78c04a3a1212.bindTooltip(
+                `<div>
+                     PROJECT ZEAL
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_95339f9937bdbf08cd0e480632718e13 = L.marker(
+                [41.68926, -87.60768],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_40dde52db783c1e1b09ba3bab17911f8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_95339f9937bdbf08cd0e480632718e13.setIcon(icon_40dde52db783c1e1b09ba3bab17911f8);
+        
+    
+            marker_95339f9937bdbf08cd0e480632718e13.bindTooltip(
+                `<div>
+                     PULLMAN HISTORIC FOUNDATION
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_476b827fd1a7794e6e373cb2868c5568 = L.marker(
+                [41.69248, -87.60918],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_8cf9c31d2ac1578385f19b34910e2686 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_476b827fd1a7794e6e373cb2868c5568.setIcon(icon_8cf9c31d2ac1578385f19b34910e2686);
+        
+    
+            marker_476b827fd1a7794e6e373cb2868c5568.bindTooltip(
+                `<div>
+                     PULLMAN HISTORIC SITE NFP
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_46dabd21686ef9784a9392e9302a89cb = L.marker(
+                [41.69248, -87.60918],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_a55da752cfc9fe4e0bff7928ebeccf31 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_46dabd21686ef9784a9392e9302a89cb.setIcon(icon_a55da752cfc9fe4e0bff7928ebeccf31);
+        
+    
+            marker_46dabd21686ef9784a9392e9302a89cb.bindTooltip(
+                `<div>
+                     PULLMAN STATE HISTORIC SITE
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e208b35fffd105224bea38e120360b20 = L.marker(
+                [41.96242, -87.68439],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_1e14ca545389187961437806dff38032 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_e208b35fffd105224bea38e120360b20.setIcon(icon_1e14ca545389187961437806dff38032);
+        
+    
+            marker_e208b35fffd105224bea38e120360b20.bindTooltip(
+                `<div>
+                     RAVENSWOOD LAKE VIEW HISTORICAL ASSOCIATION
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7eed0f671ca4ed738f67079ff5647809 = L.marker(
+                [41.78279, -87.60447],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_dbd4eb00400501f9bcc11c9710a28734 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_7eed0f671ca4ed738f67079ff5647809.setIcon(icon_dbd4eb00400501f9bcc11c9710a28734);
+        
+    
+            marker_7eed0f671ca4ed738f67079ff5647809.bindTooltip(
+                `<div>
+                     RENAISSANCE SOCIETY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c32609d63b434712020a28954c09a3bf = L.marker(
+                [41.89419, -87.62644],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_4439a236b8ea21e46b8faa78c62ec876 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_c32609d63b434712020a28954c09a3bf.setIcon(icon_4439a236b8ea21e46b8faa78c62ec876);
+        
+    
+            marker_c32609d63b434712020a28954c09a3bf.bindTooltip(
+                `<div>
+                     RICHARD H DRIEHAUS MUSEUM
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_104155898ab7c9f9b5bcf285181ac5e1 = L.marker(
+                [41.89399, -87.62718],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_1a9020c63b827a8951b217a0da072802 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_104155898ab7c9f9b5bcf285181ac5e1.setIcon(icon_1a9020c63b827a8951b217a0da072802);
+        
+    
+            marker_104155898ab7c9f9b5bcf285181ac5e1.bindTooltip(
+                `<div>
+                     RICHARD H. DRIEHAUS MUSEUM
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5a7a836dfc4a0ef6038066d81d41a644 = L.marker(
+                [41.70067, -87.67275],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_09a68393a7c58e81cf897ab0ea486cfd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_5a7a836dfc4a0ef6038066d81d41a644.setIcon(icon_09a68393a7c58e81cf897ab0ea486cfd);
+        
+    
+            marker_5a7a836dfc4a0ef6038066d81d41a644.bindTooltip(
+                `<div>
+                     RIDGE HISTORICAL SOCIETY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b2746b0f963e7da01c57249cce271230 = L.marker(
+                [41.91675, -87.64853],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_5f92d9a40e36d35268fca16b49426630 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_b2746b0f963e7da01c57249cce271230.setIcon(icon_5f92d9a40e36d35268fca16b49426630);
+        
+    
+            marker_b2746b0f963e7da01c57249cce271230.bindTooltip(
+                `<div>
+                     ROGER BROWN STUDY COLLECTION
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6f710f045f029f89ec1ab17ac0b1fbef = L.marker(
+                [41.8743, -87.62425],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_44d708901387575a69953277d26bf23f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_6f710f045f029f89ec1ab17ac0b1fbef.setIcon(icon_44d708901387575a69953277d26bf23f);
+        
+    
+            marker_6f710f045f029f89ec1ab17ac0b1fbef.bindTooltip(
+                `<div>
+                     SEPERTUS MUSEUM
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ed4032be583dc34b9bbaa61431cd3dd0 = L.marker(
+                [41.93779, -87.6417],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_900794c96ddd13ef2337dfd3aec8de00 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_ed4032be583dc34b9bbaa61431cd3dd0.setIcon(icon_900794c96ddd13ef2337dfd3aec8de00);
+        
+    
+            marker_ed4032be583dc34b9bbaa61431cd3dd0.bindTooltip(
+                `<div>
+                     SERBIAN-AMERICAN MUSEUM - ST SAVA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6bc40e2fb5e50526c210ffb3e7050547 = L.marker(
+                [41.88222, -87.63686],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_c6096b25e30e2a7a5380eb196f282b4f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_6bc40e2fb5e50526c210ffb3e7050547.setIcon(icon_c6096b25e30e2a7a5380eb196f282b4f);
+        
+    
+            marker_6bc40e2fb5e50526c210ffb3e7050547.bindTooltip(
+                `<div>
+                     SMITH MUSEUM OF STAINED GLASS WINDOWS
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_200afd853aee0438dd00b1195cd6553d = L.marker(
+                [41.73004, -87.54603],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_8bbe3d89db832f268286f73b89d76507 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_200afd853aee0438dd00b1195cd6553d.setIcon(icon_8bbe3d89db832f268286f73b89d76507);
+        
+    
+            marker_200afd853aee0438dd00b1195cd6553d.bindTooltip(
+                `<div>
+                     SOUTH CHICAGO ART CENTER NFP
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2c9a6762598b30b55fe68fd03759c59c = L.marker(
+                [41.82453, -87.6232],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_a4f2e3d6fd4a82308abe478ab2593a8f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_2c9a6762598b30b55fe68fd03759c59c.setIcon(icon_a4f2e3d6fd4a82308abe478ab2593a8f);
+        
+    
+            marker_2c9a6762598b30b55fe68fd03759c59c.bindTooltip(
+                `<div>
+                     SOUTH SIDE COMMUNITY ART CENTER
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_677c874f0242baa1deaa22786690492b = L.marker(
+                [41.71678, -87.53134],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_2dcdaa631decad4d941b34c0cf282842 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_677c874f0242baa1deaa22786690492b.setIcon(icon_2dcdaa631decad4d941b34c0cf282842);
+        
+    
+            marker_677c874f0242baa1deaa22786690492b.bindTooltip(
+                `<div>
+                     SOUTHEAST CHICAGO HISTORICAL SOCIETY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_acffbdee8d4576a4062f6b58a2876054 = L.marker(
+                [41.8743, -87.62425],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_75ce5f4a45cc6b303830820289c3d700 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_acffbdee8d4576a4062f6b58a2876054.setIcon(icon_75ce5f4a45cc6b303830820289c3d700);
+        
+    
+            marker_acffbdee8d4576a4062f6b58a2876054.bindTooltip(
+                `<div>
+                     SPERTUS INSTITUTE OF JEWISH STUDIES
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_764d3aa290749c4ec2663d582ff2970b = L.marker(
+                [41.8743, -87.62425],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_7cf9ba7f077a6706a6b0792682a4967d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_764d3aa290749c4ec2663d582ff2970b.setIcon(icon_7cf9ba7f077a6706a6b0792682a4967d);
+        
+    
+            marker_764d3aa290749c4ec2663d582ff2970b.bindTooltip(
+                `<div>
+                     SPERTUS MUSEUM
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_75335fe658ad5e99fde207a7c10950bf = L.marker(
+                [41.8743, -87.62425],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_67c6703f1ea63a666073ca2b63293f10 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_75335fe658ad5e99fde207a7c10950bf.setIcon(icon_67c6703f1ea63a666073ca2b63293f10);
+        
+    
+            marker_75335fe658ad5e99fde207a7c10950bf.bindTooltip(
+                `<div>
+                     SPERTUS MUSEUM & SPERTUS INSTITUTE OF JEWISH STUDIES
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e98c52961b9a9ef1611ef789037ee8a9 = L.marker(
+                [41.87692, -87.62756],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_cd93b0fb2362ac559ebb79aeada21a0d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_e98c52961b9a9ef1611ef789037ee8a9.setIcon(icon_cd93b0fb2362ac559ebb79aeada21a0d);
+        
+    
+            marker_e98c52961b9a9ef1611ef789037ee8a9.bindTooltip(
+                `<div>
+                     STATE STREET GALLERY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_04f239d62f7838c1c5adeaa7344c9d40 = L.marker(
+                [41.8816, -87.6261],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_d3ea84a5104f37e8cff012a4e7ee6c58 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_04f239d62f7838c1c5adeaa7344c9d40.setIcon(icon_d3ea84a5104f37e8cff012a4e7ee6c58);
+        
+    
+            marker_04f239d62f7838c1c5adeaa7344c9d40.bindTooltip(
+                `<div>
+                     STUDENT UNION GALLERIES
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8c81e73084da58a8659a439975c35e6a = L.marker(
+                [41.97651, -87.66832],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_484f96bad3201cc3f2de8216512b0cc3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_8c81e73084da58a8659a439975c35e6a.setIcon(icon_484f96bad3201cc3f2de8216512b0cc3);
+        
+    
+            marker_8c81e73084da58a8659a439975c35e6a.bindTooltip(
+                `<div>
+                     SWEDISH AMERICAN MUSEUM ASSOCIATION OF CHICAGO
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8ef15e9de3e6ff15dcc4866843a2a5c0 = L.marker(
+                [41.97564, -87.70963],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_d2d7618a8f76fffc8eda9775b3e0e87f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_8ef15e9de3e6ff15dcc4866843a2a5c0.setIcon(icon_d2d7618a8f76fffc8eda9775b3e0e87f);
+        
+    
+            marker_8ef15e9de3e6ff15dcc4866843a2a5c0.bindTooltip(
+                `<div>
+                     SWEDISH-AMERICAN HISTORICAL SOCIETY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_57485255dd3d2912ab77a9a0f340b28b = L.marker(
+                [41.7061, -87.71358],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_0f521127e8af927296179619900d2c37 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_57485255dd3d2912ab77a9a0f340b28b.setIcon(icon_0f521127e8af927296179619900d2c37);
+        
+    
+            marker_57485255dd3d2912ab77a9a0f340b28b.bindTooltip(
+                `<div>
+                     SXU GALLERY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fb638cfdc513109f57e0658210c90acc = L.marker(
+                [41.86575, -87.62266],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_48284e91e30c0f9c16d5d91930ccce63 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_fb638cfdc513109f57e0658210c90acc.setIcon(icon_48284e91e30c0f9c16d5d91930ccce63);
+        
+    
+            marker_fb638cfdc513109f57e0658210c90acc.bindTooltip(
+                `<div>
+                     UERMMMC MEDICAL ALUMNI ASSOCIATION OF AMERICA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_50af201132425cb3313200ff11f90afa = L.marker(
+                [41.89481, -87.68278],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_d63a065799b9f28ceb58066ec7a44341 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_50af201132425cb3313200ff11f90afa.setIcon(icon_d63a065799b9f28ceb58066ec7a44341);
+        
+    
+            marker_50af201132425cb3313200ff11f90afa.bindTooltip(
+                `<div>
+                     UKRAINIAN NATIONAL MUSEUM
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_066d62cdb45d22916e3572e5566deb80 = L.marker(
+                [41.78279, -87.60447],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_64b9270910e5b6915848ed14c68106c1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_066d62cdb45d22916e3572e5566deb80.setIcon(icon_64b9270910e5b6915848ed14c68106c1);
+        
+    
+            marker_066d62cdb45d22916e3572e5566deb80.bindTooltip(
+                `<div>
+                     UNIVERSITY OF CHICAGO BOTANIC GARDEN
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_55240c84ae13c943ecdf8bd7b860fe58 = L.marker(
+                [41.96393, -87.66504],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_9a9875fb6d2d2a8f169a0872557515cb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_55240c84ae13c943ecdf8bd7b860fe58.setIcon(icon_9a9875fb6d2d2a8f169a0872557515cb);
+        
+    
+            marker_55240c84ae13c943ecdf8bd7b860fe58.bindTooltip(
+                `<div>
+                     UPTOWN HISTORICAL SOCIETY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_697cd7756a8970d0145a9354e424c603 = L.marker(
+                [41.97269, -87.66419],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_a627e14dc903e2cefe4c85746825c462 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_697cd7756a8970d0145a9354e424c603.setIcon(icon_a627e14dc903e2cefe4c85746825c462);
+        
+    
+            marker_697cd7756a8970d0145a9354e424c603.bindTooltip(
+                `<div>
+                     VIETNAM MUSEUM
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ad632990028d85a40913b6e5ddab2688 = L.marker(
+                [41.6998, -87.66395],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_261dcb5d1dd8bf83afefc573aa7aa234 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_ad632990028d85a40913b6e5ddab2688.setIcon(icon_261dcb5d1dd8bf83afefc573aa7aa234);
+        
+    
+            marker_ad632990028d85a40913b6e5ddab2688.bindTooltip(
+                `<div>
+                     VIVIAN G HARSH SOCIETY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2551df3115d65ef5653825af3f3e7c7a = L.marker(
+                [41.89452, -87.65258],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_8449c45b50825164b4eb61c2c9143569 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_2551df3115d65ef5653825af3f3e7c7a.setIcon(icon_8449c45b50825164b4eb61c2c9143569);
+        
+    
+            marker_2551df3115d65ef5653825af3f3e7c7a.bindTooltip(
+                `<div>
+                     WOMAN MADE GALLERY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bf896d139a7803ad0f0b96fe03fc462d = L.marker(
+                [41.84034, -87.71825],
+                {}
+            ).addTo(marker_cluster_f90293a0a3e75dc33f50c0d8034314cb);
+        
+    
+            var icon_86ddd8a08ba30b7edc78ddd8265dc90c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_bf896d139a7803ad0f0b96fe03fc462d.setIcon(icon_86ddd8a08ba30b7edc78ddd8265dc90c);
+        
+    
+            marker_bf896d139a7803ad0f0b96fe03fc462d.bindTooltip(
+                `<div>
+                     YOLLOCALLI YOUTH MUSEUM
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5193e49e3e41bb8fed397146cdb3310c = L.marker(
+                [41.82796, -87.67896],
+                {}
+            ).addTo(map_a05770e606bb7634f18251693317616a);
+        
+    
+            var icon_d7b2a7f8e624666df698e8f4003a46b4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fa-fish", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_5193e49e3e41bb8fed397146cdb3310c.setIcon(icon_d7b2a7f8e624666df698e8f4003a46b4);
+        
+    
+            marker_5193e49e3e41bb8fed397146cdb3310c.bindTooltip(
+                `<div>
+                     AQUARIUM FISH SANCTUARY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1ceb0134dec68fd738c58848ffbe23a9 = L.marker(
+                [41.81391, -87.63567],
+                {}
+            ).addTo(map_a05770e606bb7634f18251693317616a);
+        
+    
+            var icon_8534ee6f8e988dbc6003dab3d1b022c9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "paw", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_1ceb0134dec68fd738c58848ffbe23a9.setIcon(icon_8534ee6f8e988dbc6003dab3d1b022c9);
+        
+    
+            marker_1ceb0134dec68fd738c58848ffbe23a9.bindTooltip(
+                `<div>
+                     EDEN PLACE NATURE CENTER
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8988bb6977da9870327ce43b6d87a7b4 = L.marker(
+                [41.86668, -87.61907],
+                {}
+            ).addTo(map_a05770e606bb7634f18251693317616a);
+        
+    
+            var icon_58a418aa22994b19f4912d07e25fa133 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fa-fish", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_8988bb6977da9870327ce43b6d87a7b4.setIcon(icon_58a418aa22994b19f4912d07e25fa133);
+        
+    
+            marker_8988bb6977da9870327ce43b6d87a7b4.bindTooltip(
+                `<div>
+                     JOHN G. SHEDD AQUARIUM
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_846874c33713467a7e68531f9597b7d0 = L.marker(
+                [41.91852, -87.63604],
+                {}
+            ).addTo(map_a05770e606bb7634f18251693317616a);
+        
+    
+            var icon_bcc7a9da212a79497e0db47cc97b12c5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "paw", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_846874c33713467a7e68531f9597b7d0.setIcon(icon_bcc7a9da212a79497e0db47cc97b12c5);
+        
+    
+            marker_846874c33713467a7e68531f9597b7d0.bindTooltip(
+                `<div>
+                     LINCOLN PARK ZOOLOGICAL SOCIETY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_63e74b58d9a6bd02a4c8df3cbe3b7a55 = L.marker(
+                [41.9312, -87.63733],
+                {}
+            ).addTo(map_a05770e606bb7634f18251693317616a);
+        
+    
+            var icon_20e0f80e2cf5d20b3c7abb2536bf6588 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "paw", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_63e74b58d9a6bd02a4c8df3cbe3b7a55.setIcon(icon_20e0f80e2cf5d20b3c7abb2536bf6588);
+        
+    
+            marker_63e74b58d9a6bd02a4c8df3cbe3b7a55.bindTooltip(
+                `<div>
+                     PEGGY NOTEBAERT NATURE MUSEUM
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4ca9a4c0177a54d643daba5029bfc5bc = L.marker(
+                [41.8675, -87.61905],
+                {}
+            ).addTo(map_a05770e606bb7634f18251693317616a);
+        
+    
+            var icon_5067f676d9ce4dc393ae121c845bce69 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fa-fish", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_4ca9a4c0177a54d643daba5029bfc5bc.setIcon(icon_5067f676d9ce4dc393ae121c845bce69);
+        
+    
+            marker_4ca9a4c0177a54d643daba5029bfc5bc.bindTooltip(
+                `<div>
+                     SHEDD AQUARIUM SOCIETY
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html><div><h3 align = "center"><b>Description</b></h3><br>
+<div style = "margin-left:0.3cm; margin-right:0.3cm "><p text-align: justify>The final plot is an interactive map centered on Chicago, utilizing Folium's mapping capabilities. This visualization distinctly marks three different types of attractions: zoos, aquariums, and museums, each represented by unique icons and colors for clear differentiation. Zoos are denoted with a green paw icon, aquariums with a blue fish icon, and museums are clustered together and symbolized by a red university icon.<br>The use of color-coding and distinct icons is an effective visual strategy for quick recognition and helps in distinguishing between the different categories of attractions at a glance. Zoos and aquariums are added directly to the map to highlight their specific locations, while museums are clustered to avoid overplotting and to manage the density of markers in areas where multiple museums are in close proximity. The clustering provides a cleaner visualization and improves the user experience by decluttering the map, which would otherwise be overwhelmed with markers in museum-dense regions.<br>The legend is a crucial component of the map, positioned fixedly at the bottom left corner. It provides a concise explanation of the icons with an accompanying label, enhancing the user's ability to understand what each marker represents without the need for further instructions. This feature ensures that the map is informative and user-friendly.<br>By including a control scale, users can gauge distances and the spatial relationships between attractions. The choice of the 'cartodbpositron' tile base offers a neutral, unobtrusive background that ensures the colorful markers stand out, making the map visually appealing and functionally effective for users seeking to explore Chicago's zoos, aquariums, and museums.</p></div>
+</div>
