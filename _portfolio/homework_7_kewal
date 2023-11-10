@@ -3753,8 +3753,7 @@ collection: portfolio
                 {"sticky": true}
             );
         
-</script>
-
+  </script>
   <BR>
   <p align="justify">
   <h2>Description</h2> <br>
@@ -3764,3 +3763,4 @@ collection: portfolio
   In essence, the interactivity transforms the plot from a mere presentation tool to an exploratory instrument, empowering viewers with direct engagement and a deeper comprehension of the data.
   </p>
 </html>
+
