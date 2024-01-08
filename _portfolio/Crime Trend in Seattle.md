@@ -31,7 +31,7 @@ The rationale behind aggregating points into larger areas is twofold: it provide
 ### Goal:
 The main goal of the graph is to examine the trend in crime rates from 2008 to 2022. Through this visualization, we seek to detect and comprehend any clear patterns or shifts in crime statistics.
 
-![Figure 1: Crime Trends In Seattle ](/images/CrimeTrends.png)
+<img width="1072" alt="image" src="https://github.com/kewal97/kewal97.github.io/assets/116126736/99f00670-cbc9-4b8f-8980-73edbc95fa7b">
 
 
 ### Observations:
@@ -47,7 +47,7 @@ We have also made strategic enhancements such as callout text to underscore crim
 ### Goal:
 The goal of the plot is to analyze and discern the pattern of crime incidents in Seattle throughout the recent complete year, 2022. This year is selected to reflect the current crime situation, providing a true representation of the fluctuations in crime rates by season helps in understanding the safety and security within the city.
 
- ![Figure 2: Month Crime Trends: 2022](/images/MonthCrimeTredns.png)
+<img width="894" alt="image" src="https://github.com/kewal97/kewal97.github.io/assets/116126736/97ceb369-3de4-42a6-9017-42b105907f99">
 
 
 ### Observation:
@@ -65,7 +65,7 @@ This contextual adjustment makes the data more relatable and easier to understan
 ### Goal:
 The goal of creating this graph is to present a clear and quantifiable comparison of the top 10 criminal types in Seattle, highlighting which types of crimes are most prevalent. 
 
-![Figure 3: Top 10 Crimes in Seattle](/images/Top10Crimes.png)
+<img width="957" alt="image" src="https://github.com/kewal97/kewal97.github.io/assets/116126736/62a59e95-acf1-4a7c-aa2a-273bee19720e">
 
  
 ### Observation:
@@ -82,9 +82,9 @@ The horizontal orientation of the bar chart is deliberately chosen to align with
 ### Goal: 
 The motivation for creating this graph is to analyze and compare the median reporting times for various crime types.
 
-![Figure 4: Median Reporting Time](/images/MedianReportingTime.png)
- 
+<img width="916" alt="image" src="https://github.com/kewal97/kewal97.github.io/assets/116126736/d25a7030-0475-4b53-a0f6-d03d47209abd">
 
+ 
 ### Observation:
 The bar chart clearly indicates that certain types of crimes, such as embezzlement and offenses related to pornography or obscene material, tend to have a longer median reporting time compared to others, like motor vehicle theft or larceny-theft, which are reported more promptly.
 Embezzlement tops the list, suggesting a longer time for detection or reporting, while larceny-theft, extortion/blackmail, and motor vehicle theft are at the lower end, indicating quicker reporting times.
@@ -102,7 +102,7 @@ The bar chart effectively conveys median reporting times for different crime typ
 ### Goal:
 The goal of plotting the graph is to provide a comparative visual analysis of the frequency of assault offenses and burglary/breaking & entering incidents across various neighborhoods. By mapping these two specific crime types in a scatter plot, it allows for an immediate visual assessment of which neighborhoods are more prone to certain crimes. 
 
- ![Figure 5: Crime Comparison Across Micro Communities](/images/CrimeComparisonMicroCommunities.png)
+<img width="666" alt="image" src="https://github.com/kewal97/kewal97.github.io/assets/116126736/a4ea9b8a-e94b-4803-b2bb-a93ea6d224e6">
 
 
 ### Observation:
@@ -119,7 +119,7 @@ The plot effectively uses a two-dimensional plane to allow for an immediate visu
 ### Goal:
 The goal of the plot appears to be to visually represent the frequency of crime incidents across different neighborhoods in Seattle. 
 
- ![Figure 6: Geographic Distribution of Crime Rates](/images/GeoDistributionSeattle.png)
+<img width="1073" alt="image" src="https://github.com/kewal97/kewal97.github.io/assets/116126736/97fd9948-4fcf-451f-a623-94e0ac780b96">
 
 
 ### Observation:
@@ -130,13 +130,12 @@ The visual presentation comprises three distinct components. On the left side, a
 
 
 
-
 ## Crime Density Per Square Miles In Seattle
 
 ### Goal:
 Acknowledging the limit of graph 6, the report normalizes the crime frequency with population, using crime rate per capita (per 1000) as a new metrics to compare between neighborhoods.
 
- ![Figure 7: Crime Density Per Square Miles](/images/CrimeDensityInSeattle.png)
+<img width="535" alt="image" src="https://github.com/kewal97/kewal97.github.io/assets/116126736/5883476f-bd35-4b4a-a536-04c930a66e5e">
 
 
 ### Observation:
@@ -151,7 +150,7 @@ The map itself is another choropleth map, which we have already justified for it
 ### Goal:
 Continuing the series of metrics to for neighborhood comparison from graph 6 and 7, graph 8 introduces normalization by areas to compute Crime density (per square miles).
 
- ![Figure 8: Crime Per Captia Seattle](/images/CrimePerCapitaSeattle.png)
+<img width="420" alt="image" src="https://github.com/kewal97/kewal97.github.io/assets/116126736/f4fd1598-f896-4bec-88eb-416f874d677f">
 
 
 ### Observation:
@@ -166,7 +165,7 @@ The map itself is another choropleth map, which we have already justified for it
 The goal of the plot is to analyze and illustrate the relationship between population density and the crime count within various neighborhoods in Seattle. It aims to determine if a higher population density correlates with a higher number of reported crimes. 
 
 
- ![Figure 9: Correlation Between Population Desnity and Crime Count](/images/CrimeCountAndPopDensity.png)
+<img width="815" alt="image" src="https://github.com/kewal97/kewal97.github.io/assets/116126736/3454e22c-7550-408e-ac7d-323c1101425c">
 
 
 ## Observation:
@@ -184,7 +183,7 @@ To provide context, the graph features text encodings displaying the five neighb
 ### Goal:
 Analyzing the earlier graphs reveals that downtown areas rank highest in terms of identified regions with high crime rates, whether assessed through high-crime areas, per capita analysis, or per square mile analysis. Hence, this visualization will help in exploring the specific blocks contributing to crime in the downtown area.
 
- ![Figure 10: Downtown Crime Count Distribution](/images/DowntownSeattleCrime.png)
+<img width="1008" alt="image" src="https://github.com/kewal97/kewal97.github.io/assets/116126736/adbd81be-fde6-4930-b397-9e408fef4f84">
 
 
 ### Observation:
