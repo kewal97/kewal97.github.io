@@ -7,18 +7,17 @@ redirect_from:
   - /about/
   - /about.html
 ---
+Greetings! I am Kewal Tadas, a dedicated and aspiring Data Scientist, currently enriching my expertise through a Master's in Data Science at Seattle University. My academic journey is marked by a stellar CGPA of 3.64/4.0, reflecting my deep engagement with subjects like Statistical Machine Learning, Big Data Analytics, and AI for Business.
 
-Welcome to my portfolio, where I invite you to explore my journey as a passionate and dedicated data science graduate student. My name is Kewal Tadas, and I am thrilled to share my expertise and experiences in the dynamic world of data science.
+During my Master's program, I have been involved in impactful projects that demonstrate my ability to apply complex theories to real-world problems. My work includes developing a comprehensive decision-tree model to analyze youth drug use, achieving significant accuracy in classification, and leveraging convolutional neural networks for bird species classification with high accuracy. These projects underline my proficiency in handling large datasets and complex algorithms to extract meaningful insights.
 
-In today's rapidly evolving digital landscape, the ability to extract meaningful insights from vast amounts of data is a coveted skill. As a data scientist, I am driven by the limitless possibilities of leveraging data to make informed decisions, solve complex problems, and drive innovation across various domains.
+Professionally, my role as a Data Scientist at SDI Engineering in Seattle has been a testament to my ability to deliver practical solutions. Here, I notably improved United Airlines' Flight Delay predictions by 15% and created a predictive model for landing gear force, which achieved an impressive R-squared value of 0.85. My tenure as a Data Analyst at Gut Lernen Technocraft in India further showcases my versatility, where I contributed to enhancing business processes and data-driven decision-making through innovative analytics and reporting.
 
-Throughout my academic journey, I have cultivated a strong foundation in mathematics, statistics, and computer science, enabling me to comprehend and manipulate data with precision. Equipped with this technical prowess, I have immersed myself in the art of transforming raw data into actionable knowledge, employing a diverse range of analytical techniques and machine learning algorithms.
-
-However, data science is not merely a technical discipline—it is an amalgamation of creativity, critical thinking, and effective communication. I have honed my skills in data storytelling, presenting complex findings in a compelling and understandable manner. By bridging the gap between data-driven insights and real-world decision-making, I strive to empower stakeholders to make informed choices.
+My skill set is a blend of programming prowess in Python, SQL, and R, and an in-depth understanding of data science technologies and libraries. I have effectively utilized these skills across various projects, making substantial contributions to the fields I have worked in.
 
 In my portfolio, you will find a showcase of the projects that have shaped my data science journey. From predictive modeling to natural language processing, I have explored a wide array of domains, tackling real-world challenges and deriving meaningful insights. Each project exemplifies my commitment to applying data-driven solutions to solve complex problems and drive meaningful impact.
 
-Beyond my technical skills and project work, I am an ardent believer in lifelong learning. I constantly seek out new methodologies, tools, and advancements in the field of data science. By staying at the forefront of emerging trends, I aim to bring innovative and cutting-edge approaches to every project I undertake.
+Beyond my technical skills and project work, I am an ardent believer in lifelong learning. I constantly seek out new methodologies, tools, and advancements in the field of data science. By staying at the forefront of emerging trends, I aim to bring innovative and cutting-edge approaches to every project I undertake. My academic and professional experiences combined have equipped me with the necessary tools to tackle complex data challenges, making me a valuable asset in the field of data science.
 
 As you explore my portfolio, I hope to inspire you with my passion for data science and its immense potential to revolutionize industries and improve lives. I am excited to connect with fellow data enthusiasts, potential collaborators, and industry professionals who share the same zeal for leveraging data to drive positive change.
 
